@@ -44,12 +44,9 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/695d3b88fb220305fba31023/5f3c2fd4b_orchestra-media-white-logo.png"
+                src="/assets/images/logo-white.png"
                 alt="Orchestra Media"
-                className="h-20 w-auto"
-                width="250"
-                height="80"
-                loading="lazy"
+                className="h-12 w-auto mb-6"
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
