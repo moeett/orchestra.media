@@ -25,7 +25,7 @@ export const PAGE_URLS: { [key: string]: string } = {
     CaseFormula1: '/project/formula-1-fanzone/',
     News: '/news/',
     Contact: '/contact/',
-    About: '/about-us/',
+    About: '/about/',
     CaseStudyDetail: '/case-studies/detail/', // Fallback or strict routing
 };
 
