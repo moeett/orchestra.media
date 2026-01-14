@@ -96,9 +96,9 @@ export default function TestimonialsSectionNew() {
                       &quot;{testimonials[current].quote}&quot;
                     </p>
                     <div>
-                      <h4 className="text-2xl font-bold text-white mb-1">
+                      <h3 className="text-2xl font-bold text-white mb-1">
                         {testimonials[current].name}
-                      </h4>
+                      </h3>
                       <p className="text-[#C9A227] font-semibold">
                         {testimonials[current].role}
                       </p>
@@ -116,6 +116,7 @@ export default function TestimonialsSectionNew() {
           <div className="flex items-center justify-center gap-4 mt-10">
             <button
               onClick={prev}
+              aria-label="Previous testimonial"
               className="w-14 h-14 rounded-full bg-[#0a1628] border border-white/10 flex items-center justify-center hover:bg-[#8B1538] hover:border-[#8B1538] transition-all"
             >
               <ChevronLeft className="w-6 h-6 text-white" />
@@ -126,9 +127,10 @@ export default function TestimonialsSectionNew() {
                 <button
                   key={index}
                   onClick={() => setCurrent(index)}
+                  aria-label={`Go to testimonial ${index + 1}`}
                   className={`h-2 rounded-full transition-all ${index === current
-                      ? 'w-12 bg-[#8B1538]'
-                      : 'w-8 bg-white/20 hover:bg-white/40'
+                    ? 'w-12 bg-[#8B1538]'
+                    : 'w-8 bg-white/20 hover:bg-white/40'
                     }`}
                 />
               ))}
@@ -136,11 +138,13 @@ export default function TestimonialsSectionNew() {
 
             <button
               onClick={next}
+              aria-label="Next testimonial"
               className="w-14 h-14 rounded-full bg-[#0a1628] border border-white/10 flex items-center justify-center hover:bg-[#8B1538] hover:border-[#8B1538] transition-all"
             >
               <ChevronRight className="w-6 h-6 text-white" />
             </button>
           </div>
+
 
           {/* Thumbnail Previews */}
           <div className="flex justify-center gap-4 mt-8">
@@ -149,8 +153,8 @@ export default function TestimonialsSectionNew() {
                 key={index}
                 onClick={() => setCurrent(index)}
                 className={`relative w-16 h-16 rounded-full overflow-hidden transition-all ${index === current
-                    ? 'ring-4 ring-[#8B1538] scale-110'
-                    : 'opacity-50 hover:opacity-100'
+                  ? 'ring-4 ring-[#8B1538] scale-110'
+                  : 'opacity-50 hover:opacity-100'
                   }`}
               >
                 <img

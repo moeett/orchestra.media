@@ -47,7 +47,7 @@ export default function HeroSectionNew() {
           transition={{ duration: 1 }}
           className="absolute inset-0"
         >
-          <img 
+          <img
             src={slides[currentSlide].image}
             alt="Exhibition"
             className="w-full h-full object-cover"
@@ -70,7 +70,7 @@ export default function HeroSectionNew() {
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <motion.span 
+              <motion.span
                 className="inline-block px-6 py-2 rounded-full bg-[#8B1538]/20 backdrop-blur-sm text-[#C9A227] text-sm font-semibold mb-6 border border-[#8B1538]/30"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -92,15 +92,15 @@ export default function HeroSectionNew() {
                 ))}
               </h1>
 
-              <motion.div 
+              <motion.div
                 className="flex flex-wrap gap-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
               >
                 <Link to={createPageUrl('About')}>
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     className="bg-[#8B1538] hover:bg-[#6d1029] text-white rounded-full px-8 h-14 text-lg group shadow-xl shadow-[#8B1538]/20"
                   >
                     Get Started
@@ -108,8 +108,8 @@ export default function HeroSectionNew() {
                   </Button>
                 </Link>
                 <Link to={createPageUrl('Contact')}>
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#0a1628] rounded-full px-8 h-14 text-lg"
                   >
                     Contact Us
@@ -125,6 +125,7 @@ export default function HeroSectionNew() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4">
         <button
           onClick={prevSlide}
+          aria-label="Previous slide"
           className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#8B1538] transition-colors group"
         >
           <ChevronLeft className="w-6 h-6 text-white" />
@@ -135,17 +136,18 @@ export default function HeroSectionNew() {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-1 rounded-full transition-all ${
-                index === currentSlide 
-                  ? 'w-12 bg-[#8B1538]' 
+              aria-label={`Go to slide ${index + 1}`}
+              className={`h-1 rounded-full transition-all ${index === currentSlide
+                  ? 'w-12 bg-[#8B1538]'
                   : 'w-8 bg-white/30 hover:bg-white/50'
-              }`}
+                }`}
             />
           ))}
         </div>
 
         <button
           onClick={nextSlide}
+          aria-label="Next slide"
           className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#8B1538] transition-colors group"
         >
           <ChevronRight className="w-6 h-6 text-white" />
