@@ -33,7 +33,7 @@ const caseStudy = {
     {
       title: 'Execution and Build',
       content: 'The booth was engineered for durability and reusability, with modular components that could be adapted to different exhibition spaces while maintaining brand consistency.\n\nAll elements were pre-fabricated and tested before shipment, ensuring smooth installation at each event location.\n\nOur on-site team managed the complete build process — from structural assembly to final styling — working within tight schedules and coordinating with multiple stakeholders to deliver a flawless result.\n\nSpecial attention was given to lighting design, using strategic illumination to highlight key technologies and create visual depth throughout the space.',
-      images: ['/assets/images/1473168345425-3-medium.webp']
+      images: [] // 1473168345425-3 was broken/empty
     },
     {
       title: 'Technology Integration',
