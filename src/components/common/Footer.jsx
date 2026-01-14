@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
-import { 
-  Facebook, 
-  Youtube, 
-  Instagram, 
+import {
+  Facebook,
+  Youtube,
+  Instagram,
   Linkedin,
   Mail,
   Phone,
@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <img 
+              <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/695d3b88fb220305fba31023/5f3c2fd4b_orchestra-media-white-logo.png"
                 alt="Orchestra Media"
                 className="h-20 w-auto"
@@ -74,60 +74,66 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-6">Company</h4>
-            <ul className="space-y-3">
-              {companyLinks.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    to={createPageUrl(link.page)}
-                    className="text-white/60 hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services Links */}
-          <div>
-            <h4 className="font-semibold text-lg mb-6">Core Services</h4>
-            <ul className="space-y-3">
-              {serviceLinks.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    to={createPageUrl(link.page)}
-                    className="text-white/60 hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="font-semibold text-lg mb-6">Connect</h4>
+            <h3 className="font-semibold text-lg mb-6">Company</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-[#8B1538] mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@orchestra.media" className="text-white/60 hover:text-white transition-colors">
-                  info@orchestra.media
+              {['About', 'OurTeam', 'GlobalPresence', 'News'].map((page) => (
+                <li key={page}>
+                  <Link
+                    to={createPageUrl(page)}
+                    className="text-gray-400 hover:text-[#C9A227] transition-colors"
+                  >
+                    {page.replace(/([A-Z])/g, ' $1').trim()}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Core Services */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Core Services</h3>
+            <ul className="space-y-4">
+              {[
+                { name: 'Sales Agent', page: 'SalesAgent' },
+                { name: 'Booth Design', page: 'BoothDesign' },
+                { name: 'Events Management', page: 'EventsManagement' },
+                { name: 'VIP Services', page: 'VIPServices' }
+              ].map((service) => (
+                <li key={service.page}>
+                  <Link
+                    to={createPageUrl(service.page)}
+                    className="text-gray-400 hover:text-[#C9A227] transition-colors"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Connect */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Connect</h3>
+            <ul className="space-y-4">
+              <li>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-400 hover:text-[#C9A227] transition-colors group"
+                >
+                  <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  <span>LinkedIn</span>
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-[#8B1538] mt-0.5 flex-shrink-0" />
-                <a href="tel:+97145745900" className="text-white/60 hover:text-white transition-colors">
-                  +971 4 574 5900
-                </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#8B1538] mt-0.5 flex-shrink-0" />
-                <span className="text-white/60">
-                  Dubai Chambers, DCCI<br />
-                  Dubai, United Arab Emirates
-                </span>
+              <li>
+                <Link
+                  to={createPageUrl('Contact')}
+                  className="flex items-center gap-3 text-gray-400 hover:text-[#C9A227] transition-colors group"
+                >
+                  <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  <span>Contact Us</span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -144,9 +150,9 @@ export default function Footer() {
             <span className="hidden md:inline text-white/20">|</span>
             <p className="text-white/60 text-sm">
               Website created by{' '}
-              <a 
-                href="https://webcraftdev.com" 
-                target="_blank" 
+              <a
+                href="https://webcraftdev.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#C9A227] hover:text-white transition-colors underline"
               >
