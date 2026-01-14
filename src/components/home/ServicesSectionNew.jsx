@@ -97,11 +97,12 @@ export default function ServicesSectionNew() {
                     <img
                       src={service.image}
                       srcSet={`
+                        ${service.image.replace('w=800', 'w=300')} 300w,
                         ${service.image.replace('w=800', 'w=400')} 400w,
                         ${service.image.replace('w=800', 'w=600')} 600w,
                         ${service.image.replace('w=800', 'w=800')} 800w
                       `}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
                       alt={service.title}
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

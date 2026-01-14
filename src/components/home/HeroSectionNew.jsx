@@ -20,9 +20,39 @@ export default function HeroSectionNew() {
           <source src="/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-[#0a1628]/80 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#0a1628]/70 to-transparent" />
       </div>
+
+      {/* Video Overlay - Reduced Opacity */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none">
+        <div className="absolute inset-0 bg-[#0a1628]/40 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/80 via-[#0a1628]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-transparent to-transparent opacity-80" />
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
+      >
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-white/50 text-xs tracking-[0.2em] uppercase font-light">Scroll</span>
+          <div className="w-[30px] h-[50px] rounded-full border-2 border-white/20 flex justify-center p-2">
+            <motion.div
+              animate={{
+                y: [0, 12, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-1.5 h-1.5 rounded-full bg-white mb-1"
+            />
+          </div>
+        </div>
+      </motion.div>
 
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-[#8B1538]/10 blur-3xl" />
