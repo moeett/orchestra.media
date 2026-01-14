@@ -18,7 +18,8 @@ const Contact = lazy(() => import("./Contact"));
 const ContentProduction = lazy(() => import("./ContentProduction"));
 const EventsManagement = lazy(() => import("./EventsManagement"));
 const GlobalPresence = lazy(() => import("./GlobalPresence"));
-const Home = lazy(() => import("./Home"));
+const Link = lazy(() => import("react-router-dom").then(module => ({ default: module.Link }))); // Keep others lazy
+import Home from "./Home"; // Static import for Main Page (Critical Path)
 const Marketing = lazy(() => import("./Marketing"));
 const MultimediaImmersive = lazy(() => import("./MultimediaImmersive"));
 const News = lazy(() => import("./News"));

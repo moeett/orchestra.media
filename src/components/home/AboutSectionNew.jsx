@@ -26,8 +26,14 @@ export default function AboutSectionNew() {
             <div className="grid grid-cols-12 gap-4">
               <div className="col-span-7">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                  <img 
+                  <img
                     src="/assets/images/1540575467063-1-medium.webp"
+                    srcSet={`
+                      /assets/images/1540575467063-1-thumb.webp 300w,
+                      /assets/images/1540575467063-1-small.webp 400w,
+                      /assets/images/1540575467063-1-medium.webp 800w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     alt="Exhibition"
                     className="w-full h-[400px] object-cover"
                   />
@@ -35,15 +41,27 @@ export default function AboutSectionNew() {
               </div>
               <div className="col-span-5 flex flex-col gap-4">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                  <img 
+                  <img
                     src="/assets/images/1511578314322-3-medium.webp"
+                    srcSet={`
+                      /assets/images/1511578314322-3-thumb.webp 300w,
+                      /assets/images/1511578314322-3-small.webp 400w,
+                      /assets/images/1511578314322-3-medium.webp 800w
+                    `}
+                    sizes="(max-width: 768px) 50vw, 33vw"
                     alt="Stand Design"
                     className="w-full h-[190px] object-cover"
                   />
                 </div>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                  <img 
+                  <img
                     src="/assets/images/1558618666-fcd2-medium.webp"
+                    srcSet={`
+                      /assets/images/1558618666-fcd2-thumb.webp 300w,
+                      /assets/images/1558618666-fcd2-small.webp 400w,
+                      /assets/images/1558618666-fcd2-medium.webp 800w
+                    `}
+                    sizes="(max-width: 768px) 50vw, 33vw"
                     alt="Events"
                     className="w-full h-[190px] object-cover"
                   />
@@ -89,7 +107,7 @@ export default function AboutSectionNew() {
             </h2>
 
             <p className="text-white/70 text-lg mb-8 leading-relaxed">
-              Your trusted global agent for exhibition space and world-class stand building services, 
+              Your trusted global agent for exhibition space and world-class stand building services,
               specializing in international defense, aerospace, technology/AI, and aviation trade shows.
             </p>
 
@@ -121,8 +139,8 @@ export default function AboutSectionNew() {
 
             <div className="flex items-center gap-6">
               <Link to={createPageUrl('About')}>
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-[#8B1538] hover:bg-[#6d1029] text-white rounded-full px-8 h-14 group shadow-xl shadow-[#8B1538]/20"
                 >
                   Explore Us
