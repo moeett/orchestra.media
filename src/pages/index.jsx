@@ -53,57 +53,57 @@ import VIPServices from "./VIPServices";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
-    
+
     AIEnhancements: AIEnhancements,
-    
+
     About: About,
-    
+
     BoothDesign: BoothDesign,
-    
+
     Branding: Branding,
-    
+
     CaseFalcon: CaseFalcon,
-    
+
     CaseFormula1: CaseFormula1,
-    
+
     CaseJetex: CaseJetex,
-    
+
     CaseKingdomTomorrow: CaseKingdomTomorrow,
-    
+
     CaseMirionSunNuclear: CaseMirionSunNuclear,
-    
+
     CasePrattWhitney: CasePrattWhitney,
-    
+
     CaseRollsRoyce: CaseRollsRoyce,
-    
+
     CaseStudies: CaseStudies,
-    
+
     CaseStudyDetail: CaseStudyDetail,
-    
+
     Contact: Contact,
-    
+
     ContentProduction: ContentProduction,
-    
+
     EventsManagement: EventsManagement,
-    
+
     GlobalPresence: GlobalPresence,
-    
+
     Home: Home,
-    
+
     Marketing: Marketing,
-    
+
     MultimediaImmersive: MultimediaImmersive,
-    
+
     News: News,
-    
+
     OurTeam: OurTeam,
-    
+
     SalesAgent: SalesAgent,
-    
+
     Sponsorship: Sponsorship,
-    
+
     VIPServices: VIPServices,
-    
+
 }
 
 function _getCurrentPage(url) {
@@ -123,64 +123,64 @@ function _getCurrentPage(url) {
 function PagesContent() {
     const location = useLocation();
     const currentPage = _getCurrentPage(location.pathname);
-    
+
     return (
         <Layout currentPageName={currentPage}>
-            <Routes>            
-                
-                    <Route path="/" element={<AIEnhancements />} />
-                
-                
+            <Routes>
+
+                <Route path="/" element={<Home />} />
+
+
                 <Route path="/AIEnhancements" element={<AIEnhancements />} />
-                
+
                 <Route path="/About" element={<About />} />
-                
+
                 <Route path="/BoothDesign" element={<BoothDesign />} />
-                
+
                 <Route path="/Branding" element={<Branding />} />
-                
+
                 <Route path="/CaseFalcon" element={<CaseFalcon />} />
-                
+
                 <Route path="/CaseFormula1" element={<CaseFormula1 />} />
-                
+
                 <Route path="/CaseJetex" element={<CaseJetex />} />
-                
+
                 <Route path="/CaseKingdomTomorrow" element={<CaseKingdomTomorrow />} />
-                
+
                 <Route path="/CaseMirionSunNuclear" element={<CaseMirionSunNuclear />} />
-                
+
                 <Route path="/CasePrattWhitney" element={<CasePrattWhitney />} />
-                
+
                 <Route path="/CaseRollsRoyce" element={<CaseRollsRoyce />} />
-                
+
                 <Route path="/CaseStudies" element={<CaseStudies />} />
-                
+
                 <Route path="/CaseStudyDetail" element={<CaseStudyDetail />} />
-                
+
                 <Route path="/Contact" element={<Contact />} />
-                
+
                 <Route path="/ContentProduction" element={<ContentProduction />} />
-                
+
                 <Route path="/EventsManagement" element={<EventsManagement />} />
-                
+
                 <Route path="/GlobalPresence" element={<GlobalPresence />} />
-                
-                <Route path="/Home" element={<Home />} />
-                
+
+
+
                 <Route path="/Marketing" element={<Marketing />} />
-                
+
                 <Route path="/MultimediaImmersive" element={<MultimediaImmersive />} />
-                
+
                 <Route path="/News" element={<News />} />
-                
+
                 <Route path="/OurTeam" element={<OurTeam />} />
-                
+
                 <Route path="/SalesAgent" element={<SalesAgent />} />
-                
+
                 <Route path="/Sponsorship" element={<Sponsorship />} />
-                
+
                 <Route path="/VIPServices" element={<VIPServices />} />
-                
+
             </Routes>
         </Layout>
     );
