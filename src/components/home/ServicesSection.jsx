@@ -9,21 +9,21 @@ const services = [
     title: 'Sales Agent – Space Bookings',
     description: 'Expand your exhibition reach with our global network and end-to-end sales management.',
     icon: Users,
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80',
+    image: '/assets/images/1556761175-5973-medium.webp',
     page: 'SalesAgent'
   },
   {
     title: 'Booth Design & Construction',
     description: 'Make a powerful impression with custom-designed, expertly built exhibition stands.',
     icon: Building2,
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
+    image: '/assets/images/1497366216548-3-medium.webp',
     page: 'BoothDesign'
   },
   {
     title: 'Events Management',
     description: 'Immersive events with purpose and power - from concept to flawless execution.',
     icon: Calendar,
-    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80',
+    image: '/assets/images/1505373877841-8-medium.webp',
     page: 'EventsManagement'
   }
 ];

@@ -27,7 +27,7 @@ export default function AboutSectionNew() {
               <div className="col-span-7">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                    src="/assets/images/1540575467063-1-medium.webp"
                     alt="Exhibition"
                     className="w-full h-[400px] object-cover"
                   />
@@ -36,14 +36,14 @@ export default function AboutSectionNew() {
               <div className="col-span-5 flex flex-col gap-4">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=500&q=80"
+                    src="/assets/images/1511578314322-3-medium.webp"
                     alt="Stand Design"
                     className="w-full h-[190px] object-cover"
                   />
                 </div>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80"
+                    src="/assets/images/1558618666-fcd2-medium.webp"
                     alt="Events"
                     className="w-full h-[190px] object-cover"
                   />

@@ -9,7 +9,7 @@ const newsArticles = [
     excerpt: 'MRO Europe 2025 showcased the latest innovations in aircraft maintenance, repair, and overhaul, bringing together industry leaders from around the world.',
     date: 'August 7, 2025',
     category: 'News',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
+    image: '/assets/images/1436491865332-7-medium.webp',
     readTime: '5 min read'
   },
   {
@@ -18,7 +18,7 @@ const newsArticles = [
     excerpt: 'Strategic sponsorship opportunities at MRO Guangzhou 2025 offer unprecedented access to the rapidly growing Asian aviation market.',
     date: 'August 7, 2025',
     category: 'News',
-    image: 'https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800&q=80',
+    image: '/assets/images/1480796927426-f-medium.webp',
     readTime: '4 min read'
   },
   {
@@ -27,7 +27,7 @@ const newsArticles = [
     excerpt: 'A comprehensive guide to the most impactful IT exhibitions worldwide, featuring emerging trends and networking opportunities.',
     date: 'August 5, 2025',
     category: 'Industry Insights',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+    image: '/assets/images/1540575467063-1-medium.webp',
     readTime: '6 min read'
   },
   {
@@ -36,7 +36,7 @@ const newsArticles = [
     excerpt: 'Discover the cutting-edge design trends that will define exhibition spaces in 2026, from immersive technology to sustainable materials.',
     date: 'July 28, 2025',
     category: 'Design',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+    image: '/assets/images/1497366216548-3-medium.webp',
     readTime: '5 min read'
   },
   {
@@ -45,7 +45,7 @@ const newsArticles = [
     excerpt: 'Expert strategies for ensuring your exhibition investment delivers measurable returns and lasting business relationships.',
     date: 'July 20, 2025',
     category: 'Business',
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
+    image: '/assets/images/1556761175-5973-medium.webp',
     readTime: '7 min read'
   },
   {
@@ -54,7 +54,7 @@ const newsArticles = [
     excerpt: 'How Orchestra Media is pioneering eco-friendly booth design and construction practices for a more sustainable future.',
     date: 'July 15, 2025',
     category: 'Sustainability',
-    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+    image: '/assets/images/1505373877841-8-medium.webp',
     readTime: '4 min read'
   }
 ];
@@ -78,7 +78,7 @@ export default function News() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80"
+            src="/assets/images/1504711434969-e-large.webp"
             alt="News & Insights"
             className="w-full h-full object-cover opacity-20"
           />

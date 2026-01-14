@@ -4,12 +4,12 @@ import CaseStudyDetail from './CaseStudyDetail';
 const caseStudy = {
   title: 'The Kingdom of Tomorrow Journey',
   categories: ['Booth Construction'],
-  heroImage: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=1920&q=80',
+  heroImage: '/assets/images/1535016120720-4-large.webp',
   sections: [
     {
       title: 'Case Overview',
       content: 'The project "Kingdom of Tomorrow Journey" was designed as an immersive, high-tech exhibition experience that guided visitors through the visionary transformation of the Kingdom of Saudi Arabia under the framework of Vision 2030.\n\nThis concept combined cutting-edge technologies — VR, holograms, interactive touch screens, projection mapping, and sensory effects — to take guests on a symbolic journey into the Kingdom\'s future. Each thematic area revealed a new aspect of Saudi innovation, from tourism and mobility to industry, space, and sports.\n\nThe pavilion was envisioned as a multi-sensory narrative space, blending digital art, architecture, and storytelling into a cohesive experiential journey.',
-      images: ['https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&q=80']
+      images: ['/assets/images/1535016120720-4-medium.webp']
     },
     {
       title: 'Architectural and Design Concept',
@@ -20,8 +20,8 @@ const caseStudy = {
         '<strong>Circulation:</strong> A minimalistic staircase guided the flow of movement, enhancing the clean, modern aesthetic and keeping the visitor\'s focus on the visual narrative.'
       ],
       images: [
-        'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&q=80',
-        'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80'
+        '/assets/images/1535016120720-4-medium.webp',
+        '/assets/images/1497366216548-3-medium.webp'
       ]
     },
     {
@@ -61,13 +61,13 @@ const caseStudy = {
     {
       title: 'Conclusion',
       content: '"Kingdom of Tomorrow Journey" is more than an exhibition — it\'s a visionary experience that translates the Saudi Vision 2030 narrative into a tangible, emotional, and futuristic space. By merging art, architecture, and advanced technology, the project invited every visitor to see, feel, and believe in the Kingdom\'s bright future.',
-      images: ['https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&q=80']
+      images: ['/assets/images/1535016120720-4-medium.webp']
     }
   ],
   relatedProjects: [
-    { slug: 'CaseMirionSunNuclear', title: 'Mirion Sun Nuclear global concept', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80' },
-    { slug: 'CaseFormula1', title: 'Formula 1 Fanzone', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1518899109542-12e8f71e8a32?w=800&q=80' },
-    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80' }
+    { slug: 'CaseMirionSunNuclear', title: 'Mirion Sun Nuclear global concept', categories: ['Booth Construction'], image: '/assets/images/1576091160550-2-medium.webp' },
+    { slug: 'CaseFormula1', title: 'Formula 1 Fanzone', categories: ['Booth Construction'], image: '/assets/images/1485872299829-c-medium.webp' },
+    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: '/assets/images/1540575467063-1-medium.webp' }
   ]
 };
 

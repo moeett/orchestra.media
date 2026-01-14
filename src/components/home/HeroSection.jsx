@@ -11,7 +11,7 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80&fm=webp"
+          src="/assets/images/1436491865332-7-large.webp"
           alt="Aviation exhibition background"
           className="w-full h-full object-cover"
           width="1920"

@@ -9,25 +9,25 @@ const caseStudies = [
     slug: 'Formula1',
     title: 'Formula 1 Fanzone',
     category: 'Events & Experiences',
-    image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=800&q=80',
+    image: '/assets/images/1532298229144-0-medium.webp',
   },
   {
     slug: 'Mirionsunnuclear',
     title: 'Mirion Sun Nuclear',
     category: 'Exhibition Stand Design',
-    image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&q=80',
+    image: '/assets/images/1492619375914-8-medium.webp',
   },
   {
     slug: 'Falcon',
     title: 'Falcon Aviation',
     category: 'VIP Services',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
+    image: '/assets/images/1451187580459-4-medium.webp',
   },
   {
     slug: 'Rollsroyce',
     title: 'Rolls Royce',
     category: 'Premium Stand Build',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: '/assets/images/1558618666-fcd2-medium.webp',
   }
 ];
 
@@ -73,9 +73,9 @@ export default function CaseStudiesSectionNew() {
                     <img
                       src={study.image}
                       srcSet={`
-                        ${study.image.replace('w=800', 'w=400')} 400w,
-                        ${study.image.replace('w=800', 'w=600')} 600w,
-                        ${study.image.replace('w=800', 'w=800')} 800w
+                        ${study.image.replace('-medium.webp', '-small.webp')} 400w,
+                        ${study.image.replace('-medium.webp', '-medium.webp')} 600w,
+                        ${study.image.replace('-medium.webp', '-medium.webp')} 800w
                       `}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       alt={study.title}

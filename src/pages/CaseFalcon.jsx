@@ -4,19 +4,19 @@ import CaseStudyDetail from './CaseStudyDetail';
 const caseStudy = {
   title: 'Falcon',
   categories: ['Booth Construction'],
-  heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80',
+  heroImage: '/assets/images/1540575467063-1-large.webp',
   sections: [
     {
       title: 'Case Overview',
       content: 'Falcon, a leading name in high-end business aviation, approached us with a vision to create an exhibition environment that embodied the brand\'s essence — refined luxury, aviation excellence, and understated sophistication.\n\nThe project took place at EBACE in Geneva, one of the most prestigious global aviation events, where brands compete not only in technology but in the art of presentation.\n\nThe goal was clear: to design a space that would provide Falcon\'s clients with an exclusive and seamless brand experience, reinforcing its position as a leader in private aviation while reflecting the unparalleled comfort of its aircraft interiors.',
-      images: ['https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80']
+      images: ['/assets/images/1540575467063-1-medium.webp']
     },
     {
       title: 'Concept and Design',
       content: 'The booth\'s concept was developed in close collaboration with Falcon\'s marketing and branding team, transforming the brand\'s refined aesthetic into an architectural experience.\n\nOur creative department envisioned a layout that mirrored the journey of Falcon\'s clientele — from open, welcoming zones into more intimate VIP spaces designed for private discussions and hospitality.\n\nAt the heart of the stand stood a striking centerpiece — a bar and VIP lounge that blended deep burgundy tones, brushed gold accents, and high-end upholstery. The design exuded the same calm confidence and opulent comfort found aboard Falcon\'s aircraft, inviting guests into an atmosphere of effortless prestige.\n\nThe color palette — dominated by rich burgundy and soft gold — was chosen to communicate warmth, exclusivity, and quiet authority. Every texture and surface was carefully considered: from soft leather and rich fabrics to lacquered wall panels and custom furniture, each element contributed to a unified expression of Falcon\'s DNA.',
       images: [
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
-        'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80'
+        '/assets/images/1540575467063-1-medium.webp',
+        '/assets/images/1436491865332-7-medium.webp'
       ]
     },
     {
@@ -26,7 +26,7 @@ const caseStudy = {
     {
       title: 'Project Management and Build',
       content: 'The preparation and build process demanded precise coordination and timing.\n\nEach element was pre-fabricated, pre-assembled, and tested before shipment to ensure a flawless installation on-site in Geneva.\n\nThe on-site build took five days, including assembly, lighting calibration, and final styling.\n\nThe greatest challenge lay in maintaining perfect color consistency across a diverse range of materials — from metallic finishes to custom textiles. This was overcome through close collaboration with suppliers, rigorous quality testing, and continuous on-site supervision.\n\nSpecialized partners were engaged for premium upholstery and finishing, ensuring the booth reflected Falcon\'s commitment to perfection.\n\nLogistics were managed by our in-house team, coordinating every stage of transportation, installation, and dismantling with EBACE organizers to guarantee efficiency and precision.',
-      images: ['https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80']
+      images: ['/assets/images/1497366216548-3-medium.webp']
     },
     {
       title: 'Results and Impact',
@@ -43,9 +43,9 @@ const caseStudy = {
     }
   ],
   relatedProjects: [
-    { slug: 'CaseMirionSunNuclear', title: 'Mirion Sun Nuclear global concept', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80' },
-    { slug: 'CaseFormula1', title: 'Formula 1 Fanzone', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1518899109542-12e8f71e8a32?w=800&q=80' },
-    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&q=80' }
+    { slug: 'CaseMirionSunNuclear', title: 'Mirion Sun Nuclear global concept', categories: ['Booth Construction'], image: '/assets/images/1576091160550-2-medium.webp' },
+    { slug: 'CaseFormula1', title: 'Formula 1 Fanzone', categories: ['Booth Construction'], image: '/assets/images/1485872299829-c-medium.webp' },
+    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: '/assets/images/1535016120720-4-medium.webp' }
   ]
 };
 

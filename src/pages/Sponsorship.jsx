@@ -51,7 +51,7 @@ export default function Sponsorship() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=1920&q=80"
+            src="/assets/images/1511578314322-3-large.webp"
             alt="Sponsorship"
             className="w-full h-full object-cover opacity-20"
           />
@@ -140,7 +140,7 @@ export default function Sponsorship() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538] to-[#C9A227] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <img
-                    src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80"
+                    src="/assets/images/1511578314322-3-medium.webp"
                     alt="Sponsorship"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
@@ -154,7 +154,7 @@ export default function Sponsorship() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#C9A227] to-[#8B1538] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <img
-                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+                    src="/assets/images/1556761175-5973-medium.webp"
                     alt="Strategic Partnerships"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />

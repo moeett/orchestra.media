@@ -4,7 +4,7 @@ import CaseStudyDetail from './CaseStudyDetail';
 const caseStudy = {
   title: 'Mirion Sun Nuclear global concept',
   categories: ['Booth Construction'],
-  heroImage: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80',
+  heroImage: '/assets/images/1576091160550-2-large.webp',
   sections: [
     {
       title: 'Case Overview',
@@ -14,8 +14,8 @@ const caseStudy = {
       title: 'Concept and Inspiration',
       content: "Departing from the traditional clinical aesthetic, the concept centers around emotional storytelling — bringing together medicine, technology, and humanity in a single, cohesive narrative.\n\nRather than relying on white surfaces and technical charts, the design embraces soft textures, natural tones, and kinetic forms, creating a meditative and life-affirming environment.\n\nHere, every design element works to redefine the experience of healthcare — not as something distant and intimidating, but as something deeply human, filled with empathy and quiet strength.\n\nMirion's booth becomes a sanctuary of optimism and connection, where technology supports the most essential human values: care, trust, and the will to live fully.",
       images: [
-        'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
-        'https://images.unsplash.com/photo-1579165466741-7f35e4755660?w=800&q=80'
+        '/assets/images/1576091160550-2-medium.webp',
+        '/assets/images/1579165466741-7-medium.webp'
       ]
     },
     {
@@ -25,7 +25,7 @@ const caseStudy = {
     {
       title: 'Spatial Experience',
       content: 'The space is designed as a living environment rather than a typical trade booth — inviting visitors to pause, breathe, and connect.\n\nA dedicated relaxation area encourages open conversation and quiet reflection, reinforcing Mirion\'s role as a company that listens and supports.\n\nInteractive displays and multimedia installations reveal how Mirion\'s technologies operate in real-world settings, translating complex innovations into tangible human benefits.\n\nThe emotional flow of the booth moves from curiosity to comfort, and from comfort to confidence — mirroring the emotional journey of healing and resilience.',
-      images: ['https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80']
+      images: ['/assets/images/1576091160550-2-medium.webp']
     },
     {
       title: 'Artistic and Kinetic Elements',
@@ -37,9 +37,9 @@ const caseStudy = {
     }
   ],
   relatedProjects: [
-    { slug: 'CaseFormula1', title: 'Formula 1 Fanzone', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1518899109542-12e8f71e8a32?w=800&q=80' },
-    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&q=80' },
-    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80' }
+    { slug: 'CaseFormula1', title: 'Formula 1 Fanzone', categories: ['Booth Construction'], image: '/assets/images/1485872299829-c-medium.webp' },
+    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: '/assets/images/1535016120720-4-medium.webp' },
+    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: '/assets/images/1540575467063-1-medium.webp' }
   ]
 };
 

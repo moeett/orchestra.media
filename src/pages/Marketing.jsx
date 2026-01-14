@@ -45,7 +45,7 @@ export default function Marketing() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
+            src="/assets/images/1460925895917-a-large.webp"
             alt="Marketing"
             className="w-full h-full object-cover opacity-20"
           />
@@ -133,7 +133,7 @@ export default function Marketing() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538] to-[#C9A227] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                    src="/assets/images/1460925895917-a-medium.webp"
                     alt="Marketing"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
@@ -147,7 +147,7 @@ export default function Marketing() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#C9A227] to-[#8B1538] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <img
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
+                    src="/assets/images/1451187580459-4-medium.webp"
                     alt="Digital Marketing"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />

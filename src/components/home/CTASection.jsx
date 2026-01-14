@@ -11,7 +11,7 @@ export default function CTASection() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1920&q=80"
+          src="/assets/images/1587825140708-d-large.webp"
           alt="Exhibition"
           className="w-full h-full object-cover"
         />

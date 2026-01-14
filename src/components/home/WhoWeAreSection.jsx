@@ -27,7 +27,7 @@ export default function WhoWeAreSection() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" 
+                src="/assets/images/1540575467063-1-medium.webp" 
                 alt="Global Reach"
                 className="w-full h-[500px] object-cover"
                 width="800"

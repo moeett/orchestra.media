@@ -46,7 +46,7 @@ export default function SalesAgent() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&q=80"
+            src="/assets/images/1556761175-5973-large.webp"
             alt="Sales Agent Space Bookings"
             className="w-full h-full object-cover opacity-20"
           />
@@ -110,12 +110,12 @@ export default function SalesAgent() {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+                src="/assets/images/1556761175-5973-medium.webp"
                 alt="Exhibition Sales"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                src="/assets/images/1540575467063-1-medium.webp"
                 alt="Trade Show"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
               />
@@ -235,7 +235,7 @@ export default function SalesAgent() {
                 <div className="bg-gradient-to-br from-[#0a1628] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                   <div className="relative h-64 overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80"
+                      src="/assets/images/1511795409834-e-medium.webp"
                       alt="VIP & Delegation Services"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -265,7 +265,7 @@ export default function SalesAgent() {
                 <div className="bg-gradient-to-br from-[#0a1628] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                   <div className="relative h-64 overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                      src="/assets/images/1540575467063-1-medium.webp"
                       alt="Sponsorship"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />

@@ -46,7 +46,7 @@ export default function BoothDesign() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+            src="/assets/images/1497366216548-3-large.webp"
             alt="Booth Design Construction"
             className="w-full h-full object-cover opacity-20"
           />
@@ -109,12 +109,12 @@ export default function BoothDesign() {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+                src="/assets/images/1497366216548-3-medium.webp"
                 alt="Booth Design"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                src="/assets/images/1540575467063-1-medium.webp"
                 alt="Exhibition Stand"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
               />
@@ -232,7 +232,7 @@ export default function BoothDesign() {
                 <div className="bg-gradient-to-br from-[#0a1628] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                   <div className="relative h-64 overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80"
+                      src="/assets/images/1505373877841-8-medium.webp"
                       alt="Project Management & Production"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />

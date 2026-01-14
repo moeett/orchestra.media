@@ -10,7 +10,7 @@ const services = [
     title: 'Booth Design',
     subtitle: '& Construction',
     description: 'Transform your exhibition space into a stunning showcase that captures attention and drives engagement.',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+    image: '/assets/images/1540575467063-1-medium.webp',
     page: 'BoothDesign'
   },
   {
@@ -18,7 +18,7 @@ const services = [
     title: 'Events',
     subtitle: 'Management',
     description: 'Comprehensive event planning and execution services that ensure flawless delivery from start to finish.',
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
+    image: '/assets/images/1511578314322-3-medium.webp',
     page: 'EventsManagement'
   },
   {
@@ -26,7 +26,7 @@ const services = [
     title: 'Sales Agent',
     subtitle: 'Space Bookings',
     description: 'Strategic space acquisition and booking services at premier exhibitions worldwide.',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+    image: '/assets/images/1557804506-669a-medium.webp',
     page: 'SalesAgent'
   },
   {
@@ -34,7 +34,7 @@ const services = [
     title: 'VIP Services',
     subtitle: '& Delegation',
     description: 'Exclusive VIP hospitality and delegation management for high-profile exhibition attendees.',
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
+    image: '/assets/images/1556761175-5973-medium.webp',
     page: 'VIPServices'
   },
   {
@@ -42,7 +42,7 @@ const services = [
     title: 'Branding',
     subtitle: '& Marketing',
     description: 'Comprehensive brand identity and marketing solutions tailored for global exhibitions.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+    image: '/assets/images/1460925895917-a-medium.webp',
     page: 'Branding'
   },
   {
@@ -50,7 +50,7 @@ const services = [
     title: 'Content',
     subtitle: 'Production',
     description: 'Professional content creation services including video, photography, and multimedia production.',
-    image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&q=80',
+    image: '/assets/images/1492619375914-8-medium.webp',
     page: 'ContentProduction'
   }
 ];
@@ -97,10 +97,10 @@ export default function ServicesSectionNew() {
                     <img
                       src={service.image}
                       srcSet={`
-                        ${service.image.replace('w=800', 'w=300')} 300w,
-                        ${service.image.replace('w=800', 'w=400')} 400w,
-                        ${service.image.replace('w=800', 'w=600')} 600w,
-                        ${service.image.replace('w=800', 'w=800')} 800w
+                        ${service.image.replace('-medium.webp', '-thumb.webp')} 300w,
+                        ${service.image.replace('-medium.webp', '-small.webp')} 400w,
+                        ${service.image.replace('-medium.webp', '-medium.webp')} 600w,
+                        ${service.image.replace('-medium.webp', '-medium.webp')} 800w
                       `}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
                       alt={service.title}

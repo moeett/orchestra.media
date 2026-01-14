@@ -4,19 +4,19 @@ import CaseStudyDetail from './CaseStudyDetail';
 const caseStudy = {
   title: 'Pratt and Whitney',
   categories: ['Booth Construction', 'Sales Agent – Space Bookings'],
-  heroImage: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80',
+  heroImage: '/assets/images/1436491865332-7-large.webp',
   sections: [
     {
       title: 'Case Overview',
       content: 'Pratt & Whitney, a global leader in aerospace propulsion systems, required a comprehensive exhibition solution that would showcase their technological innovations while facilitating meaningful business engagement.\n\nOur role extended beyond booth design and construction — we also served as their sales agent, managing space bookings and exhibition logistics to ensure a seamless presence at major industry events.\n\nThe project demanded a strategic approach that balanced brand storytelling, technical presentations, and hospitality, creating an environment where innovation meets collaboration.',
-      images: ['https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80']
+      images: ['/assets/images/1436491865332-7-medium.webp']
     },
     {
       title: 'Design and Spatial Concept',
       content: 'The booth was designed as a modern, open environment that reflected Pratt & Whitney\'s forward-thinking approach to aerospace engineering.\n\nWe created distinct functional zones: a central display area for showcasing engine technologies, private meeting spaces for client discussions, and an open lounge area for networking and hospitality.\n\nThe design language incorporated clean lines, industrial materials, and bold graphics that communicated precision, power, and innovation — core attributes of the Pratt & Whitney brand.\n\nInteractive digital displays and multimedia presentations were integrated throughout the space, allowing visitors to explore complex technologies in an engaging, accessible manner.',
       images: [
-        'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
-        'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=800&q=80'
+        '/assets/images/1436491865332-7-medium.webp',
+        '/assets/images/1474302770737-1-medium.webp'
       ]
     },
     {
@@ -33,7 +33,7 @@ const caseStudy = {
     {
       title: 'Execution and Build',
       content: 'The booth was engineered for durability and reusability, with modular components that could be adapted to different exhibition spaces while maintaining brand consistency.\n\nAll elements were pre-fabricated and tested before shipment, ensuring smooth installation at each event location.\n\nOur on-site team managed the complete build process — from structural assembly to final styling — working within tight schedules and coordinating with multiple stakeholders to deliver a flawless result.\n\nSpecial attention was given to lighting design, using strategic illumination to highlight key technologies and create visual depth throughout the space.',
-      images: ['https://images.unsplash.com/photo-1473168345425-33e0154e9bcd?w=800&q=80']
+      images: ['/assets/images/1473168345425-3-medium.webp']
     },
     {
       title: 'Technology Integration',
@@ -63,9 +63,9 @@ const caseStudy = {
     }
   ],
   relatedProjects: [
-    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80' },
-    { slug: 'CaseRollsRoyce', title: 'Rolls Royce', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80' },
-    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&q=80' }
+    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: '/assets/images/1540575467063-1-medium.webp' },
+    { slug: 'CaseRollsRoyce', title: 'Rolls Royce', categories: ['Booth Construction'], image: '/assets/images/1544620347-c4fd-medium.webp' },
+    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: '/assets/images/1535016120720-4-medium.webp' }
   ]
 };
 

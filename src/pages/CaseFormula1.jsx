@@ -4,7 +4,7 @@ import CaseStudyDetail from './CaseStudyDetail';
 const caseStudy = {
   title: 'Formula 1 Fanzone',
   categories: ['Booth Construction'],
-  heroImage: 'https://images.unsplash.com/photo-1485872299829-c673f5194813?w=1920&q=80',
+  heroImage: '/assets/images/1485872299829-c-large.webp',
   sections: [
     {
       title: 'Case Overview',
@@ -80,9 +80,9 @@ const caseStudy = {
     }
   ],
   relatedProjects: [
-    { slug: 'CaseMirionSunNuclear', title: 'Mirion Sun Nuclear global concept', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80' },
-    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&q=80' },
-    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80' }
+    { slug: 'CaseMirionSunNuclear', title: 'Mirion Sun Nuclear global concept', categories: ['Booth Construction'], image: '/assets/images/1576091160550-2-medium.webp' },
+    { slug: 'CaseKingdomTomorrow', title: 'The Kingdom of Tomorrow Journey', categories: ['Booth Construction'], image: '/assets/images/1535016120720-4-medium.webp' },
+    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: '/assets/images/1540575467063-1-medium.webp' }
   ]
 };
 

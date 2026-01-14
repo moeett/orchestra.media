@@ -106,7 +106,7 @@ export default function Contact() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80"
+            src="/assets/images/1423666639041-f-large.webp"
             alt="Contact"
             className="w-full h-full object-cover opacity-20"
           />

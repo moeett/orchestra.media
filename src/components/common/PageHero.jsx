@@ -5,7 +5,7 @@ import { createPageUrl } from '@/utils';
 import { ChevronRight } from 'lucide-react';
 
 export default function PageHero({ title, breadcrumbs = [], backgroundImage }) {
-  const defaultImage = "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80";
+  const defaultImage = "/assets/images/1557804506-669a-large.webp";
 
   return (
     <section className="relative pt-32 pb-20 min-h-[400px] flex items-end overflow-hidden">

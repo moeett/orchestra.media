@@ -10,7 +10,7 @@ const caseStudies = [
     slug: 'kingdom-tomorrow',
     title: 'Kingdom of Tomorrow Exhibition',
     category: 'Exhibition Management',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+    image: '/assets/images/1540575467063-1-medium.webp',
     description: 'A groundbreaking exhibition showcasing future technologies and innovation for a major government initiative.'
   },
   {
@@ -18,7 +18,7 @@ const caseStudies = [
     slug: 'pratt-whitney',
     title: 'Pratt & Whitney Global Tour',
     category: 'Booth Design',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
+    image: '/assets/images/1451187580459-4-medium.webp',
     description: 'Multi-continent exhibition presence for aerospace leader with custom-built stands across 15 international shows.'
   },
   {
@@ -26,7 +26,7 @@ const caseStudies = [
     slug: 'rolls-royce',
     title: 'Rolls-Royce Defense Solutions',
     category: 'Immersive Experience',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: '/assets/images/1558618666-fcd2-medium.webp',
     description: 'Interactive booth experience featuring AR demonstrations and immersive product showcases.'
   },
   {
@@ -34,7 +34,7 @@ const caseStudies = [
     slug: 'mirion-sun-nuclear',
     title: 'Mirion & Sun Nuclear',
     category: 'Booth Construction',
-    image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&q=80',
+    image: '/assets/images/1492619375914-8-medium.webp',
     description: 'Sophisticated medical technology exhibition stands designed for global healthcare conferences.'
   },
   {
@@ -42,7 +42,7 @@ const caseStudies = [
     slug: 'jetex',
     title: 'Jetex VIP Services',
     category: 'Event Management',
-    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&q=80',
+    image: '/assets/images/1556740738-b6a6-medium.webp',
     description: 'Premium event coordination and VIP delegation management for luxury aviation brand.'
   },
   {
@@ -50,7 +50,7 @@ const caseStudies = [
     slug: 'falcon',
     title: 'Falcon Defense Systems',
     category: 'Technology Integration',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
+    image: '/assets/images/1451187580459-4-medium.webp',
     description: 'Advanced holographic presentations and interactive displays for defense technology showcase.'
   },
   {
@@ -58,7 +58,7 @@ const caseStudies = [
     slug: 'formula1',
     title: 'Formula 1 Experience Zone',
     category: 'Brand Activation',
-    image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=800&q=80',
+    image: '/assets/images/1532298229144-0-medium.webp',
     description: 'High-energy fan engagement zone featuring racing simulators and immersive brand experiences.'
   }
 ];
@@ -74,7 +74,7 @@ export default function CaseStudies() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80"
+            src="/assets/images/1557804506-669a-large.webp"
             alt="Case Studies"
             className="w-full h-full object-cover opacity-20"
           />

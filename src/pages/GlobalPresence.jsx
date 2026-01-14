@@ -9,25 +9,25 @@ const regions = [
   {
     id: 'mena',
     name: 'MENA',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
+    image: '/assets/images/1512453979798-5-medium.webp',
     description: 'In MENA, we\'ve spent over a decade building deep regional expertise. Our Dubai-based team (and broader GCC network) provides on-the-ground know-how in one of the world\'s most vibrant exhibition markets. We understand the business etiquette, language (Arabic/French/English), and government protocols critical to success in the Middle East. This MENA cultural intelligence gives our clients an edge when engaging audiences from the Gulf to North Africa.'
   },
   {
     id: 'usa',
     name: 'USA',
-    image: 'https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=800&q=80',
+    image: '/assets/images/1485871981521-5-medium.webp',
     description: 'In the USA, our presence keeps us at the forefront of exhibition technology and trends. North America\'s trade shows are larger-than-life, and we bring that big thinking to our clients worldwide. From Las Vegas conventions to East Coast industry summits, we handle the unique logistics (union labor, venue rules) of U.S. venues and incorporate American tech innovations into our projects.'
   },
   {
     id: 'cis',
     name: 'CIS & Baltics',
-    image: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800&q=80',
+    image: '/assets/images/1513326738677-b-medium.webp',
     description: 'In CIS & Baltics market, we offer invaluable local insight in a region that can be challenging to navigate. Our partners in Central Asia, and Eastern Europe understand local business customs, permitting, and infrastructure. We\'ve managed pavilion builds and trade show participation in Moscow, Astana, and beyond.'
   },
   {
     id: 'asia',
     name: 'Asia',
-    image: 'https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800&q=80',
+    image: '/assets/images/1480796927426-f-medium.webp',
     description: 'Across Asia, we have a strong network spanning East Asia, South Asia, and Southeast Asia. Our team has delivered projects in China, India, Singapore, Indonesia, and more. We guide you through Asia\'s diverse exhibition landscape – from mega-shows in China\'s high-growth cities to specialised conferences in emerging ASEAN markets.'
   }
 ];
@@ -43,7 +43,7 @@ export default function GlobalPresence() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+            src="/assets/images/1451187580459-4-large.webp"
             alt="Global Presence"
             className="w-full h-full object-cover opacity-20"
           />
@@ -115,7 +115,7 @@ export default function GlobalPresence() {
               <div className="relative aspect-square max-w-lg mx-auto">
                 <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl border-8 border-[#0a1628]">
                   <img
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
+                    src="/assets/images/1451187580459-4-medium.webp"
                     alt="Global Network"
                     className="w-full h-full object-cover"
                   />
@@ -203,9 +203,9 @@ export default function GlobalPresence() {
                     <img
                       src={region.image}
                       srcSet={`
-                        ${region.image.replace('w=800', 'w=400')} 400w,
-                        ${region.image.replace('w=800', 'w=600')} 600w,
-                        ${region.image.replace('w=800', 'w=800')} 800w
+                        ${region.image.replace('-medium.webp', '-small.webp')} 400w,
+                        ${region.image.replace('-medium.webp', '-medium.webp')} 600w,
+                        ${region.image.replace('-medium.webp', '-medium.webp')} 800w
                       `}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       alt={region.name}

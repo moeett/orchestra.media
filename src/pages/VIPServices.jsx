@@ -41,7 +41,7 @@ export default function VIPServicesNew() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&q=80"
+            src="/assets/images/1511795409834-e-large.webp"
             alt="VIP Services"
             className="w-full h-full object-cover opacity-20"
           />
@@ -105,12 +105,12 @@ export default function VIPServicesNew() {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                src="/assets/images/1540575467063-1-medium.webp"
                 alt="VIP Services"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
               <img
-                src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80"
+                src="/assets/images/1511795409834-e-medium.webp"
                 alt="Delegation Services"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
               />

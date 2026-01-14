@@ -4,19 +4,19 @@ import CaseStudyDetail from './CaseStudyDetail';
 const caseStudy = {
   title: 'Jetex',
   categories: ['Booth Construction', 'Event', 'Sales Agent – Space Bookings'],
-  heroImage: 'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=1920&q=80',
+  heroImage: '/assets/images/1474302770737-1-large.webp',
   sections: [
     {
       title: 'Case Overview',
       content: 'Jetex, one of the world\'s leading private aviation service providers, required a comprehensive exhibition and event solution that would reflect their premium brand positioning and global reach.\n\nOur collaboration extended across three key service areas: booth design and construction, full event management, and sales agent services for space bookings at major aviation exhibitions worldwide.\n\nThis integrated approach allowed Jetex to maintain a consistent, high-impact presence at international events while focusing on their core business of delivering exceptional private aviation services.',
-      images: ['https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=800&q=80']
+      images: ['/assets/images/1474302770737-1-medium.webp']
     },
     {
       title: 'Booth Design and Construction',
       content: 'The Jetex booth was designed to embody the luxury, sophistication, and efficiency that define the brand\'s private aviation services.\n\nWe created an elegant, open-plan space featuring premium materials, sophisticated lighting, and comfortable hospitality areas where Jetex could engage with high-net-worth clients and aviation partners.\n\nThe design incorporated sleek architectural elements, brushed metal finishes, and ambient lighting that evoked the refined atmosphere of a private jet lounge.\n\nDigital screens showcased Jetex\'s global network, fleet capabilities, and exclusive services, while private meeting rooms provided confidential spaces for business discussions.',
       images: [
-        'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=800&q=80',
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80'
+        '/assets/images/1474302770737-1-medium.webp',
+        '/assets/images/1540575467063-1-medium.webp'
       ]
     },
     {
@@ -82,9 +82,9 @@ const caseStudy = {
     }
   ],
   relatedProjects: [
-    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80' },
-    { slug: 'CasePrattWhitney', title: 'Pratt and Whitney', categories: ['Booth Construction', 'Sales Agent'], image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80' },
-    { slug: 'CaseRollsRoyce', title: 'Rolls Royce', categories: ['Booth Construction'], image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80' }
+    { slug: 'CaseFalcon', title: 'Falcon', categories: ['Booth Construction'], image: '/assets/images/1540575467063-1-medium.webp' },
+    { slug: 'CasePrattWhitney', title: 'Pratt and Whitney', categories: ['Booth Construction', 'Sales Agent'], image: '/assets/images/1436491865332-7-medium.webp' },
+    { slug: 'CaseRollsRoyce', title: 'Rolls Royce', categories: ['Booth Construction'], image: '/assets/images/1544620347-c4fd-medium.webp' }
   ]
 };
 

@@ -92,7 +92,7 @@ export default function About() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
+            src="/assets/images/1540575467063-1-large.webp"
             alt="About Orchestra Media"
             className="w-full h-full object-cover opacity-20"
           />
@@ -170,24 +170,24 @@ export default function About() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <img
-                    src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                    src="/assets/images/1540575467063-1-medium.webp"
                     alt="Exhibition"
                     className="rounded-2xl w-full h-64 object-cover border border-white/10"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80"
+                    src="/assets/images/1511578314322-3-medium.webp"
                     alt="Event"
                     className="rounded-2xl w-full h-48 object-cover border border-white/10"
                   />
                 </div>
                 <div className="space-y-4 mt-8">
                   <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80"
+                    src="/assets/images/1557804506-669a-medium.webp"
                     alt="Booth Design"
                     className="rounded-2xl w-full h-48 object-cover border border-white/10"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80"
+                    src="/assets/images/1505373877841-8-medium.webp"
                     alt="Team"
                     className="rounded-2xl w-full h-64 object-cover border border-white/10"
                   />

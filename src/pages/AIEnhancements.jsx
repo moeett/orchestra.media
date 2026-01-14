@@ -85,7 +85,7 @@ export default function AIEnhancements() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920&q=80"
+            src="/assets/images/1677442136019-2-large.webp"
             alt="AI Enhancements"
             className="w-full h-full object-cover opacity-20"
           />
@@ -174,7 +174,7 @@ export default function AIEnhancements() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538] to-[#C9A227] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <img
-                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"
+                    src="/assets/images/1677442136019-2-medium.webp"
                     alt="AI Technology"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
@@ -188,7 +188,7 @@ export default function AIEnhancements() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#C9A227] to-[#8B1538] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <img
-                    src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80"
+                    src="/assets/images/1478720568477-1-medium.webp"
                     alt="Immersive Experience"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />

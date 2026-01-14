@@ -81,7 +81,7 @@ export default function GlobalPresenceSection() {
               {/* Globe Image */}
               <div className="absolute inset-16 rounded-full overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80"
+                  src="/assets/images/1451187580459-4-medium.webp"
                   alt="Global Network"
                   className="w-full h-full object-cover"
                 />

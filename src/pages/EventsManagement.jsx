@@ -54,22 +54,22 @@ const relatedServices = [
   {
     title: 'Content Production',
     page: 'ContentProduction',
-    image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&q=80'
+    image: '/assets/images/1492619375914-8-medium.webp'
   },
   {
     title: 'VIP & Delegation Services',
     page: 'VIPServices',
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80'
+    image: '/assets/images/1511795409834-e-medium.webp'
   },
   {
     title: 'Sponsorship',
     page: 'Sponsorship',
-    image: 'https://images.unsplash.com/photo-1556155092-490a1ba16284?w=800&q=80'
+    image: '/assets/images/1556155092-490a-medium.webp'
   },
   {
     title: 'Marketing',
     page: 'Marketing',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80'
+    image: '/assets/images/1460925895917-a-medium.webp'
   }
 ];
 
@@ -84,7 +84,7 @@ export default function EventsManagement() {
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1920&q=80"
+            src="/assets/images/1505373877841-8-large.webp"
             alt="Events Management"
             className="w-full h-full object-cover opacity-20"
           />
@@ -147,12 +147,12 @@ export default function EventsManagement() {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80"
+                src="/assets/images/1505373877841-8-medium.webp"
                 alt="Events Production"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                src="/assets/images/1540575467063-1-medium.webp"
                 alt="Event Management"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
               />

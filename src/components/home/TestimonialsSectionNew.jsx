@@ -7,21 +7,21 @@ const testimonials = [
     name: 'Sarah Mitchell',
     role: 'Senior Marketing Manager',
     company: 'TechCorp International',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
+    image: '/assets/images/1494790108377-b-small.webp',
     quote: 'Orchestra Media transformed our exhibition presence completely. Their attention to detail and creative approach resulted in a 300% increase in booth traffic. The team\'s professionalism and expertise are unmatched in the industry.'
   },
   {
     name: 'James Anderson',
     role: 'Director of Business Development',
     company: 'Global Aerospace Solutions',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    image: '/assets/images/1507003211169-0-small.webp',
     quote: 'Working with Orchestra Media has been an absolute pleasure. Their global reach and local expertise helped us successfully launch at exhibitions across three continents. They consistently deliver excellence.'
   },
   {
     name: 'Lisa Chen',
     role: 'VP of Marketing',
     company: 'Innovation Defense Systems',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
+    image: '/assets/images/1438761681033-6-small.webp',
     quote: 'The ROI we achieved through Orchestra Media\'s services exceeded all expectations. From initial planning to post-event analysis, they demonstrated exceptional strategic thinking and flawless execution.'
   }
 ];
