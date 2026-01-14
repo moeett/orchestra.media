@@ -103,12 +103,9 @@ export default function Layout({ children, currentPageName }) {
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center">
               <img
-                src={scrolled || !isHome
-                  ? "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/695d3b88fb220305fba31023/66efdc399_orchestra-media-black.png"
-                  : "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/695d3b88fb220305fba31023/5f3c2fd4b_orchestra-media-white-logo.png"
-                }
+                src="/LOGO-ORCHESTRA-MEDIA.webp"
                 alt="Orchestra Media"
-                className="h-16 w-auto"
+                className="h-16 w-auto object-contain"
                 width="240"
                 height="64"
               />
