@@ -4,9 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { 
-  Menu, 
-  X, 
+import {
+  Menu,
+  X,
   ChevronDown,
   MessageCircle
 } from 'lucide-react';
@@ -29,20 +29,32 @@ export default function Layout({ children, currentPageName }) {
   useEffect(() => {
     setMobileMenuOpen(false);
     window.scrollTo(0, 0);
+
+    // Canonical Tag Logic
+    let canonicalLink = document.querySelector("link[rel='canonical']");
+    if (!canonicalLink) {
+      canonicalLink = document.createElement("link");
+      canonicalLink.setAttribute("rel", "canonical");
+      document.head.appendChild(canonicalLink);
+    }
+    // Remove query params for canonical if strictly needed, but keeping search is safer for search results pages if they existed.
+    // However, usually canonicals should be the clean URL.
+    const cleanUrl = window.location.origin + location.pathname;
+    canonicalLink.setAttribute("href", cleanUrl.endsWith('/') ? cleanUrl : cleanUrl + '/');
   }, [location]);
 
   const navLinks = [
     { name: 'Home', page: 'Home' },
-    { 
-      name: 'Company', 
+    {
+      name: 'Company',
       children: [
         { name: 'About Us', page: 'About' },
         { name: 'Our Team', page: 'OurTeam' },
         { name: 'Global Presence', page: 'GlobalPresence' }
       ]
     },
-    { 
-      name: 'Exhibitions & Events', 
+    {
+      name: 'Exhibitions & Events',
       children: [
         { name: 'Sales Agent – Space Bookings', page: 'SalesAgent' },
         { name: 'Booth Design & Construction', page: 'BoothDesign' },
@@ -50,8 +62,8 @@ export default function Layout({ children, currentPageName }) {
         { name: 'VIP & Delegation Services', page: 'VIPServices' }
       ]
     },
-    { 
-      name: 'Extra Services', 
+    {
+      name: 'Extra Services',
       children: [
         { name: 'Sponsorship', page: 'Sponsorship' },
         { name: 'Marketing', page: 'Marketing' },
@@ -67,8 +79,8 @@ export default function Layout({ children, currentPageName }) {
   ];
 
   const isHome = currentPageName === 'Home';
-  const headerBg = scrolled || !isHome 
-    ? 'bg-white/95 backdrop-blur-lg shadow-sm' 
+  const headerBg = scrolled || !isHome
+    ? 'bg-white/95 backdrop-blur-lg shadow-sm'
     : 'bg-transparent';
   const textColor = scrolled || !isHome ? 'text-[#0a1628]' : 'text-white';
 
@@ -90,8 +102,8 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center">
-              <img 
-                src={scrolled || !isHome 
+              <img
+                src={scrolled || !isHome
                   ? "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/695d3b88fb220305fba31023/66efdc399_orchestra-media-black.png"
                   : "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/695d3b88fb220305fba31023/5f3c2fd4b_orchestra-media-white-logo.png"
                 }
@@ -107,7 +119,7 @@ export default function Layout({ children, currentPageName }) {
               {navLinks.map((link) => (
                 link.children ? (
                   <div key={link.name} className="relative group">
-                    <button 
+                    <button
                       className={`flex items-center gap-1 font-medium ${textColor} hover:text-[#8B1538] transition-colors`}
                     >
                       {link.name}
@@ -131,9 +143,8 @@ export default function Layout({ children, currentPageName }) {
                   <Link
                     key={link.page}
                     to={createPageUrl(link.page)}
-                    className={`font-medium ${textColor} hover:text-[#8B1538] transition-colors ${
-                      currentPageName === link.page ? 'text-[#8B1538]' : ''
-                    }`}
+                    className={`font-medium ${textColor} hover:text-[#8B1538] transition-colors ${currentPageName === link.page ? 'text-[#8B1538]' : ''
+                      }`}
                   >
                     {link.name}
                   </Link>
@@ -151,7 +162,7 @@ export default function Layout({ children, currentPageName }) {
             </div>
 
             {/* Mobile Menu Button */}
-            <button 
+            <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={`lg:hidden p-2 ${textColor}`}
               aria-label="Toggle menu"
@@ -174,7 +185,7 @@ export default function Layout({ children, currentPageName }) {
                 {navLinks.map((link) => (
                   link.children ? (
                     <div key={link.name} className="py-2">
-                      <button 
+                      <button
                         onClick={() => setServicesOpen(!servicesOpen)}
                         className="flex items-center justify-between w-full py-2 text-[#0a1628] font-medium"
                       >

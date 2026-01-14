@@ -51,6 +51,7 @@ import Sponsorship from "./Sponsorship";
 import VIPServices from "./VIPServices";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { PAGE_URLS } from '@/utils';
 
 const PAGES = {
 
@@ -128,58 +129,58 @@ function PagesContent() {
         <Layout currentPageName={currentPage}>
             <Routes>
 
-                <Route path="/" element={<Home />} />
+                <Route path={PAGE_URLS.Home} element={<Home />} />
 
 
-                <Route path="/AIEnhancements" element={<AIEnhancements />} />
+                <Route path={PAGE_URLS.AIEnhancements} element={<AIEnhancements />} />
 
-                <Route path="/About" element={<About />} />
+                <Route path={PAGE_URLS.About} element={<About />} />
 
-                <Route path="/BoothDesign" element={<BoothDesign />} />
+                <Route path={PAGE_URLS.BoothDesign} element={<BoothDesign />} />
 
-                <Route path="/Branding" element={<Branding />} />
+                <Route path={PAGE_URLS.Branding} element={<Branding />} />
 
-                <Route path="/CaseFalcon" element={<CaseFalcon />} />
+                <Route path={PAGE_URLS.CaseFalcon} element={<CaseFalcon />} />
 
-                <Route path="/CaseFormula1" element={<CaseFormula1 />} />
+                <Route path={PAGE_URLS.CaseFormula1} element={<CaseFormula1 />} />
 
-                <Route path="/CaseJetex" element={<CaseJetex />} />
+                <Route path={PAGE_URLS.CaseJetex} element={<CaseJetex />} />
 
-                <Route path="/CaseKingdomTomorrow" element={<CaseKingdomTomorrow />} />
+                <Route path={PAGE_URLS.CaseKingdomTomorrow} element={<CaseKingdomTomorrow />} />
 
-                <Route path="/CaseMirionSunNuclear" element={<CaseMirionSunNuclear />} />
+                <Route path={PAGE_URLS.CaseMirionSunNuclear} element={<CaseMirionSunNuclear />} />
 
-                <Route path="/CasePrattWhitney" element={<CasePrattWhitney />} />
+                <Route path={PAGE_URLS.CasePrattWhitney} element={<CasePrattWhitney />} />
 
-                <Route path="/CaseRollsRoyce" element={<CaseRollsRoyce />} />
+                <Route path={PAGE_URLS.CaseRollsRoyce} element={<CaseRollsRoyce />} />
 
-                <Route path="/CaseStudies" element={<CaseStudies />} />
+                <Route path={PAGE_URLS.CaseStudies} element={<CaseStudies />} />
 
-                <Route path="/CaseStudyDetail" element={<CaseStudyDetail />} />
+                <Route path={PAGE_URLS.CaseStudyDetail} element={<CaseStudyDetail />} />
 
-                <Route path="/Contact" element={<Contact />} />
+                <Route path={PAGE_URLS.Contact} element={<Contact />} />
 
-                <Route path="/ContentProduction" element={<ContentProduction />} />
+                <Route path={PAGE_URLS.ContentProduction} element={<ContentProduction />} />
 
-                <Route path="/EventsManagement" element={<EventsManagement />} />
+                <Route path={PAGE_URLS.EventsManagement} element={<EventsManagement />} />
 
-                <Route path="/GlobalPresence" element={<GlobalPresence />} />
+                <Route path={PAGE_URLS.GlobalPresence} element={<GlobalPresence />} />
 
 
 
-                <Route path="/Marketing" element={<Marketing />} />
+                <Route path={PAGE_URLS.Marketing} element={<Marketing />} />
 
-                <Route path="/MultimediaImmersive" element={<MultimediaImmersive />} />
+                <Route path={PAGE_URLS.MultimediaImmersive} element={<MultimediaImmersive />} />
 
-                <Route path="/News" element={<News />} />
+                <Route path={PAGE_URLS.News} element={<News />} />
 
-                <Route path="/OurTeam" element={<OurTeam />} />
+                <Route path={PAGE_URLS.OurTeam} element={<OurTeam />} />
 
-                <Route path="/SalesAgent" element={<SalesAgent />} />
+                <Route path={PAGE_URLS.SalesAgent} element={<SalesAgent />} />
 
-                <Route path="/Sponsorship" element={<Sponsorship />} />
+                <Route path={PAGE_URLS.Sponsorship} element={<Sponsorship />} />
 
-                <Route path="/VIPServices" element={<VIPServices />} />
+                <Route path={PAGE_URLS.VIPServices} element={<VIPServices />} />
 
             </Routes>
         </Layout>
