@@ -73,7 +73,7 @@ export default function CaseStudies() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80"
             alt="Case Studies"
             className="w-full h-full object-cover opacity-20"
@@ -106,9 +106,9 @@ export default function CaseStudies() {
       <section className="py-20 bg-[#0f1e2e] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#8B1538]/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#C9A227]/10 blur-3xl" />
-        
+
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '40px 40px'
@@ -122,7 +122,7 @@ export default function CaseStudies() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -138,7 +138,7 @@ export default function CaseStudies() {
               </span>
             </h2>
             <p className="text-white/60 text-lg leading-relaxed">
-              Explore our portfolio of successful exhibition projects, event management, and immersive experiences 
+              Explore our portfolio of successful exhibition projects, event management, and immersive experiences
               delivered for global brands across multiple continents and industries.
             </p>
           </motion.div>
@@ -149,9 +149,9 @@ export default function CaseStudies() {
       <section className="py-32 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute top-1/4 left-0 w-[500px] h-[500px] rounded-full bg-[#8B1538]/10 blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#C9A227]/10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        
+
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -173,17 +173,17 @@ export default function CaseStudies() {
                   <div className="group relative h-full">
                     {/* Glow effect on hover */}
                     <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538]/20 to-[#C9A227]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
+
                     <div className="relative bg-gradient-to-br from-[#0f1e2e] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500 h-full">
                       {/* Image Container */}
                       <div className="relative h-64 overflow-hidden">
-                        <img 
+                        <img
                           src={project.image}
                           alt={project.title}
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/50 to-transparent opacity-60" />
-                        
+
                         {/* Category Badge */}
                         <div className="absolute top-4 left-4">
                           <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-[#8B1538] to-[#6d1029] text-white text-xs font-bold tracking-wider uppercase shadow-lg">
@@ -207,7 +207,7 @@ export default function CaseStudies() {
                         <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
                           {project.description}
                         </p>
-                        
+
                         {/* View Project Link */}
                         <div className="flex items-center gap-2 text-[#C9A227] font-semibold text-sm group-hover:gap-3 transition-all">
                           <span>View Project</span>
@@ -247,7 +247,7 @@ export default function CaseStudies() {
               </span>
             </h2>
             <p className="text-white/70 text-xl mb-12">
-              Let's discuss how we can make your next project unforgettable
+              Let&apos;s discuss how we can make your next project unforgettable
             </p>
             <Link to={createPageUrl('Contact')}>
               <motion.button

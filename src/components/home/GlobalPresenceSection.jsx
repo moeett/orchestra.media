@@ -33,12 +33,12 @@ export default function GlobalPresenceSection() {
               <span className="block text-[#8B1538]">You Need Us</span>
             </h2>
             <p className="mt-6 text-gray-600 text-lg leading-relaxed">
-              Orchestra Media maintains a truly global presence, with established teams 
-              and partners across Europe, the Middle East & North Africa (MENA), the 
+              Orchestra Media maintains a truly global presence, with established teams
+              and partners across Europe, the Middle East & North Africa (MENA), the
               United States, the CIS/Baltics, and Asia.
             </p>
             <p className="mt-4 text-gray-600 text-lg leading-relaxed">
-              Our "<strong>4 continents, 1 team</strong>" approach means no matter where 
+              Our &quot;<strong>4 continents, 1 team</strong>&quot; approach means no matter where
               your next event is, we have local experts ready to execute with precision.
             </p>
 
@@ -48,11 +48,10 @@ export default function GlobalPresenceSection() {
                 <button
                   key={region.id}
                   onClick={() => setActiveRegion(region.id)}
-                  className={`px-5 py-2.5 rounded-full font-medium transition-all duration-300 ${
-                    activeRegion === region.id
+                  className={`px-5 py-2.5 rounded-full font-medium transition-all duration-300 ${activeRegion === region.id
                       ? `bg-gradient-to-r ${region.color} text-white shadow-lg`
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
+                    }`}
                 >
                   {region.name}
                 </button>
@@ -75,13 +74,13 @@ export default function GlobalPresenceSection() {
             <div className="relative aspect-square max-w-lg mx-auto">
               {/* Outer Ring */}
               <div className="absolute inset-0 rounded-full border-2 border-dashed border-gray-200 animate-spin-slow" style={{ animationDuration: '30s' }} />
-              
+
               {/* Middle Ring */}
               <div className="absolute inset-8 rounded-full border-2 border-gray-100" />
 
               {/* Globe Image */}
               <div className="absolute inset-16 rounded-full overflow-hidden shadow-2xl">
-                <img 
+                <img
                   src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80"
                   alt="Global Network"
                   className="w-full h-full object-cover"

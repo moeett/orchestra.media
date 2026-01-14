@@ -64,7 +64,7 @@ export default function ContentProduction() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=1920&q=80"
             alt="Content Production"
             className="w-full h-full object-cover opacity-20"
@@ -97,9 +97,9 @@ export default function ContentProduction() {
       <section className="py-32 bg-[#0f1e2e] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#8B1538]/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#C9A227]/10 blur-3xl" />
-        
+
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '40px 40px'
@@ -114,7 +114,7 @@ export default function ContentProduction() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -130,8 +130,8 @@ export default function ContentProduction() {
               </span>
             </h2>
             <p className="text-white/60 text-xl max-w-3xl mx-auto leading-relaxed">
-              Our Content Production service helps you tell your story in ways that captivate attention 
-              and leave a lasting impression. In a crowded exhibition hall, dynamic content can be the 
+              Our Content Production service helps you tell your story in ways that captivate attention
+              and leave a lasting impression. In a crowded exhibition hall, dynamic content can be the
               magnet that draws visitors to your booth.
             </p>
           </motion.div>
@@ -153,7 +153,7 @@ export default function ContentProduction() {
                   className="relative group"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538] to-[#C9A227] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&q=80"
                     alt="Content Production"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
@@ -167,14 +167,14 @@ export default function ContentProduction() {
                   className="relative group mt-12"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#C9A227] to-[#8B1538] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80"
                     alt="Video Production"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
                 </motion.div>
               </div>
-              
+
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -196,8 +196,8 @@ export default function ContentProduction() {
               transition={{ duration: 0.7 }}
             >
               <p className="text-white/70 text-lg leading-relaxed mb-8">
-                We blend artistic direction with engineering precision to turn bold concepts into flawless 
-                realities. From first sketch to opening hour, our end-to-end team orchestrates idea, script, 
+                We blend artistic direction with engineering precision to turn bold concepts into flawless
+                realities. From first sketch to opening hour, our end-to-end team orchestrates idea, script,
                 design, technical build, and on-site delivery.
               </p>
               <div className="grid grid-cols-2 gap-3">
@@ -224,9 +224,9 @@ export default function ContentProduction() {
       <section className="py-32 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute top-1/4 left-0 w-[500px] h-[500px] rounded-full bg-[#8B1538]/10 blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#C9A227]/10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        
+
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -241,7 +241,7 @@ export default function ContentProduction() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -257,7 +257,7 @@ export default function ContentProduction() {
               </span>
             </h2>
             <p className="text-white/60 text-xl max-w-3xl mx-auto leading-relaxed">
-              We blend artistic direction with engineering precision to turn bold concepts into flawless realities. 
+              We blend artistic direction with engineering precision to turn bold concepts into flawless realities.
               From first sketch to opening hour, our end-to-end team orchestrates every touchpoint.
             </p>
           </motion.div>
@@ -273,10 +273,10 @@ export default function ContentProduction() {
                 className="relative group"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538]/20 to-[#C9A227]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 <div className="relative bg-gradient-to-br from-[#0f1e2e] to-[#0a1628] rounded-3xl p-8 border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500 h-full overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#8B1538]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   <div className="relative z-10">
                     <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#8B1538] to-[#6d1029] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
                       <feature.icon className="w-10 h-10 text-white" />
@@ -284,7 +284,7 @@ export default function ContentProduction() {
                     <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#C9A227] transition-colors">
                       {feature.title}
                     </h3>
-                    <p 
+                    <p
                       className="text-white/60 leading-relaxed mb-6"
                       dangerouslySetInnerHTML={{ __html: feature.description }}
                     />
@@ -327,11 +327,11 @@ export default function ContentProduction() {
               </span>
             </h2>
             <p className="text-white/70 text-xl mb-12">
-              Get in Touch - Let's Start a New Project Together!
+              Get in Touch - Let&apos;s Start a New Project Together!
             </p>
             <Link to={createPageUrl('Contact')}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-16 text-lg group shadow-2xl shadow-[#8B1538]/30"
               >
                 Contact Us

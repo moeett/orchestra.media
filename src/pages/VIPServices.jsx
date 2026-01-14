@@ -40,7 +40,7 @@ export default function VIPServicesNew() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&q=80"
             alt="VIP Services"
             className="w-full h-full object-cover opacity-20"
@@ -91,8 +91,8 @@ export default function VIPServicesNew() {
               the Guests Are Important
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              Our VIP & Delegations service ensures a gold-standard experience for all involved. 
-              We handle the delicate task of engaging VIP attendees so that you can build meaningful 
+              Our VIP & Delegations service ensures a gold-standard experience for all involved.
+              We handle the delicate task of engaging VIP attendees so that you can build meaningful
               relationships in an exclusive setting.
             </p>
           </motion.div>
@@ -104,12 +104,12 @@ export default function VIPServicesNew() {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4"
             >
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
                 alt="VIP Services"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80"
                 alt="Delegation Services"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
@@ -122,7 +122,7 @@ export default function VIPServicesNew() {
               viewport={{ once: true }}
             >
               <p className="text-white/70 leading-relaxed mb-6">
-                We also assist event organisers in attracting and managing official delegations 
+                We also assist event organisers in attracting and managing official delegations
                 to elevate the profile of their events.
               </p>
               <div className="space-y-3">
@@ -141,7 +141,7 @@ export default function VIPServicesNew() {
       {/* Features */}
       <section className="py-24 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -166,7 +166,7 @@ export default function VIPServicesNew() {
               Discreet, Precise, Effortless
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto mt-4">
-              Make every minute with high-value guests count. Our multilingual, protocol-trained 
+              Make every minute with high-value guests count. Our multilingual, protocol-trained
               team choreographs VIP programmes across MENA, Europe, the USA and Asia.
             </p>
           </motion.div>
@@ -204,10 +204,10 @@ export default function VIPServicesNew() {
           >
             <h3 className="text-2xl font-bold text-white mb-4">Results</h3>
             <p className="text-white/70 leading-relaxed">
-              By handling VIP and delegation engagement end-to-end, we help our clients forge 
-              connections that can lead to major deals, partnerships, or policy support. In the 
-              defence sector, for instance, we've hosted over <strong className="text-[#C9A227]">580+ VIP military and government 
-              delegations</strong> at exhibitions, facilitating introductions that led to significant 
+              By handling VIP and delegation engagement end-to-end, we help our clients forge
+              connections that can lead to major deals, partnerships, or policy support. In the
+              defence sector, for instance, we&apos;ve hosted over <strong className="text-[#C9A227]">580+ VIP military and government
+                delegations</strong> at exhibitions, facilitating introductions that led to significant
               contracts.
             </p>
           </motion.div>
@@ -238,8 +238,8 @@ export default function VIPServicesNew() {
               Contact us for a bespoke VIP management plan!
             </p>
             <Link to={createPageUrl('Contact')}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-16 text-lg group shadow-2xl shadow-[#8B1538]/30"
               >
                 Contact Us Online

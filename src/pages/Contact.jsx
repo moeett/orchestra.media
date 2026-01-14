@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
   Send,
   Facebook,
   Youtube,
@@ -91,10 +91,10 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1500));
-    
+
     toast.success('Thank you! We will get back to you soon.');
     setFormData({ name: '', company: '', email: '', phone: '', service: '', message: '' });
     setLoading(false);
@@ -105,7 +105,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80"
             alt="Contact"
             className="w-full h-full object-cover opacity-20"
@@ -138,9 +138,9 @@ export default function Contact() {
       <section className="py-20 bg-[#0f1e2e] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#8B1538]/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#C9A227]/10 blur-3xl" />
-        
+
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '40px 40px'
@@ -157,7 +157,7 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -173,15 +173,15 @@ export default function Contact() {
                 </span>
               </h2>
               <p className="mt-4 text-white/60 text-lg leading-relaxed mb-8">
-                Whether you're interested in collaborating with us on your next project 
+                Whether you&apos;re interested in collaborating with us on your next project
                 or simply want to reach out for a conversation.
               </p>
 
               <div className="space-y-8">
                 <h3 className="font-bold text-xl text-white">SALES TEAM INQUIRIES:</h3>
-                
+
                 {offices.map((office, index) => (
-                  <motion.div 
+                  <motion.div
                     key={office.region}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -190,13 +190,13 @@ export default function Contact() {
                     className="relative group"
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538]/10 to-[#C9A227]/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
+
                     <div className="relative bg-gradient-to-br from-[#0a1628] to-[#0f1e2e] border-l-2 border-[#8B1538] pl-6 py-4 rounded-r-2xl hover:border-[#C9A227] transition-colors">
                       <h4 className="font-bold text-white text-lg">{office.region}: {office.contact}</h4>
                       <p className="text-sm text-white/50 mb-3">{office.title}</p>
-                      
+
                       <div className="space-y-2">
-                        <a 
+                        <a
                           href={`mailto:${office.email}`}
                           className="flex items-center gap-2 text-white/70 hover:text-[#C9A227] transition-colors group"
                         >
@@ -204,7 +204,7 @@ export default function Contact() {
                           {office.email}
                         </a>
                         {office.phones.map((phone) => (
-                          <a 
+                          <a
                             key={phone}
                             href={`tel:${phone.replace(/\s/g, '')}`}
                             className="flex items-center gap-2 text-white/70 hover:text-[#C9A227] transition-colors group"
@@ -224,7 +224,7 @@ export default function Contact() {
               </div>
 
               {/* Social Links */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -269,7 +269,7 @@ export default function Contact() {
               <div className="relative group">
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538]/20 to-[#C9A227]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 <div className="relative bg-gradient-to-br from-[#0f1e2e] to-[#0a1628] rounded-3xl p-8 lg:p-10 border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                   <h3 className="text-2xl font-bold text-white mb-2">
                     Let us help you unlock new markets
@@ -311,8 +311,8 @@ export default function Contact() {
                       />
                     </div>
 
-                    <Select 
-                      value={formData.service} 
+                    <Select
+                      value={formData.service}
                       onValueChange={(value) => setFormData({ ...formData, service: value })}
                     >
                       <SelectTrigger className="bg-[#0a1628] border-white/20 text-white h-12 rounded-xl focus:border-[#8B1538] transition-colors">
@@ -335,8 +335,8 @@ export default function Contact() {
                     />
 
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                      <Button 
-                        type="submit" 
+                      <Button
+                        type="submit"
                         disabled={loading}
                         className="w-full bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white h-12 rounded-xl text-lg font-semibold shadow-2xl shadow-[#8B1538]/30 group"
                       >

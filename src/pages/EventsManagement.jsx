@@ -83,7 +83,7 @@ export default function EventsManagement() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1920&q=80"
             alt="Events Management"
             className="w-full h-full object-cover opacity-20"
@@ -134,7 +134,7 @@ export default function EventsManagement() {
               Purpose and Power
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              Orchestra Media's Strategic Marketing services ensure that your message travels far and resonates deeply. 
+              Orchestra Media&apos;s Strategic Marketing services ensure that your message travels far and resonates deeply.
               We develop holistic marketing strategies that are both visionary and pragmatic.
             </p>
           </motion.div>
@@ -146,12 +146,12 @@ export default function EventsManagement() {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4"
             >
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80"
                 alt="Events Production"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
                 alt="Event Management"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
@@ -164,7 +164,7 @@ export default function EventsManagement() {
               viewport={{ once: true }}
             >
               <p className="text-white/70 leading-relaxed mb-6">
-                Whether you're launching a product in a new region, boosting your presence at an exhibition, 
+                Whether you&apos;re launching a product in a new region, boosting your presence at an exhibition,
                 or rebranding for global growth, we have the expertise to make it a success.
               </p>
               <div className="grid grid-cols-2 gap-3">
@@ -183,7 +183,7 @@ export default function EventsManagement() {
       {/* Features */}
       <section className="py-24 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -208,8 +208,8 @@ export default function EventsManagement() {
               That Stir Emotions and Drive Engagement
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto mt-4">
-              We believe every event should serve a clear purpose. Our role is to infuse that purpose 
-              into every element of the event, while also delivering spectacle and excitement that 
+              We believe every event should serve a clear purpose. Our role is to infuse that purpose
+              into every element of the event, while also delivering spectacle and excitement that
               attendees will never forget.
             </p>
           </motion.div>
@@ -275,7 +275,7 @@ export default function EventsManagement() {
                 <Link to={createPageUrl(service.page)} className="block">
                   <div className="bg-gradient-to-br from-[#0a1628] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                     <div className="relative h-48 overflow-hidden">
-                      <img 
+                      <img
                         src={service.image}
                         alt={service.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -320,11 +320,11 @@ export default function EventsManagement() {
               </span>
             </h2>
             <p className="text-white/70 text-xl mb-12">
-              Get in Touch - Let's make it a reality.
+              Get in Touch - Let&apos;s make it a reality.
             </p>
             <Link to={createPageUrl('Contact')}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-16 text-lg group shadow-2xl shadow-[#8B1538]/30"
               >
                 Contact Us

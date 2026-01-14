@@ -60,7 +60,7 @@ export default function Branding() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1920&q=80"
             alt="Branding"
             className="w-full h-full object-cover opacity-20"
@@ -93,9 +93,9 @@ export default function Branding() {
       <section className="py-32 bg-[#0f1e2e] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#8B1538]/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#C9A227]/10 blur-3xl" />
-        
+
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '40px 40px'
@@ -110,7 +110,7 @@ export default function Branding() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -126,8 +126,8 @@ export default function Branding() {
               </span>
             </h2>
             <p className="text-white/60 text-xl max-w-3xl mx-auto leading-relaxed">
-              Your brand has to work everywhere: on a 30-second video, a 30-meter lightbox, a 3D façade at a 
-              national pavilion, a LinkedIn ad, and a C-level deck—often in different languages, regulations, 
+              Your brand has to work everywhere: on a 30-second video, a 30-meter lightbox, a 3D façade at a
+              national pavilion, a LinkedIn ad, and a C-level deck—often in different languages, regulations,
               and cultural contexts.
             </p>
           </motion.div>
@@ -149,7 +149,7 @@ export default function Branding() {
                   className="relative group"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538] to-[#C9A227] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80"
                     alt="Branding"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
@@ -163,14 +163,14 @@ export default function Branding() {
                   className="relative group mt-12"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#C9A227] to-[#8B1538] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80"
                     alt="Brand Identity"
                     className="relative rounded-3xl h-72 object-cover border border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
                 </motion.div>
               </div>
-              
+
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -192,13 +192,13 @@ export default function Branding() {
               transition={{ duration: 0.7 }}
             >
               <p className="text-white/70 text-lg leading-relaxed mb-6">
-                Orchestra Media designs <strong className="text-white">brand systems built for exhibitions</strong>: 
-                strong enough to be instantly recognizable, flexible enough to adapt to any venue, and precise 
+                Orchestra Media designs <strong className="text-white">brand systems built for exhibitions</strong>:
+                strong enough to be instantly recognizable, flexible enough to adapt to any venue, and precise
                 enough to guide dozens of vendors without diluting quality.
               </p>
               <p className="text-white/60 leading-relaxed">
-                We design for <strong className="text-white">impact & operational reality</strong>. That means 
-                we pair creative direction with the rules, templates, and production specs that make delivery 
+                We design for <strong className="text-white">impact & operational reality</strong>. That means
+                we pair creative direction with the rules, templates, and production specs that make delivery
                 reliable on the ground.
               </p>
             </motion.div>
@@ -210,9 +210,9 @@ export default function Branding() {
       <section className="py-32 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute top-1/4 left-0 w-[500px] h-[500px] rounded-full bg-[#8B1538]/10 blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#C9A227]/10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        
+
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -227,7 +227,7 @@ export default function Branding() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -243,7 +243,7 @@ export default function Branding() {
               </span>
             </h2>
             <p className="text-white/60 text-xl max-w-3xl mx-auto leading-relaxed">
-              We design for impact & operational reality. That means we pair creative direction with the 
+              We design for impact & operational reality. That means we pair creative direction with the
               rules, templates, and production specs that make delivery reliable on the ground.
             </p>
           </motion.div>
@@ -259,10 +259,10 @@ export default function Branding() {
                 className="relative group"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B1538]/20 to-[#C9A227]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 <div className="relative bg-gradient-to-br from-[#0f1e2e] to-[#0a1628] rounded-3xl p-8 border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500 h-full overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#8B1538]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   <div className="relative z-10">
                     <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#8B1538] to-[#6d1029] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
                       <feature.icon className="w-10 h-10 text-white" />
@@ -270,7 +270,7 @@ export default function Branding() {
                     <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#C9A227] transition-colors">
                       {feature.title}
                     </h3>
-                    <p 
+                    <p
                       className="text-white/60 leading-relaxed mb-6"
                       dangerouslySetInnerHTML={{ __html: feature.description }}
                     />
@@ -313,11 +313,11 @@ export default function Branding() {
               </span>
             </h2>
             <p className="text-white/70 text-xl mb-12">
-              Get in Touch - Let's Start a New Project Together!
+              Get in Touch - Let&apos;s Start a New Project Together!
             </p>
             <Link to={createPageUrl('Contact')}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-16 text-lg group shadow-2xl shadow-[#8B1538]/30"
               >
                 Contact Us Online

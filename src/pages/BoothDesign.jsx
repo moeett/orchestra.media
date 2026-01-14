@@ -45,7 +45,7 @@ export default function BoothDesign() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
             alt="Booth Design Construction"
             className="w-full h-full object-cover opacity-20"
@@ -96,7 +96,7 @@ export default function BoothDesign() {
               an Unforgettable Exhibition Stand
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              Orchestra Media's Booth Design & Construction service delivers turn-key booth solutions – 
+              Orchestra Media&apos;s Booth Design & Construction service delivers turn-key booth solutions –
               custom-designed, expertly built, and ready to wow – anywhere in the world.
             </p>
           </motion.div>
@@ -108,12 +108,12 @@ export default function BoothDesign() {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4"
             >
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
                 alt="Booth Design"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
                 alt="Exhibition Stand"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
@@ -126,7 +126,7 @@ export default function BoothDesign() {
               viewport={{ once: true }}
             >
               <p className="text-white/70 leading-relaxed mb-6">
-                We take care of everything from initial creative concept to on-site construction and dismantle, 
+                We take care of everything from initial creative concept to on-site construction and dismantle,
                 so you can focus on engaging your visitors.
               </p>
               <div className="space-y-3">
@@ -145,7 +145,7 @@ export default function BoothDesign() {
       {/* Features */}
       <section className="py-24 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -168,7 +168,7 @@ export default function BoothDesign() {
               Make Your Booth the Centerpiece of the Show
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto mt-4">
-              In the bustling environment of an international trade show, a stunning booth can mean 
+              In the bustling environment of an international trade show, a stunning booth can mean
               the difference between blending in and becoming the talk of the event.
             </p>
           </motion.div>
@@ -231,7 +231,7 @@ export default function BoothDesign() {
               <Link to={createPageUrl('EventsManagement')} className="block">
                 <div className="bg-gradient-to-br from-[#0a1628] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                   <div className="relative h-64 overflow-hidden">
-                    <img 
+                    <img
                       src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80"
                       alt="Project Management & Production"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -275,11 +275,11 @@ export default function BoothDesign() {
               </span>
             </h2>
             <p className="text-white/70 text-xl mb-12">
-              Request a booth design proposal and let's start crafting your next showpiece!
+              Request a booth design proposal and let&apos;s start crafting your next showpiece!
             </p>
             <Link to={createPageUrl('Contact')}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-16 text-lg group shadow-2xl shadow-[#8B1538]/30"
               >
                 Start a Project Now

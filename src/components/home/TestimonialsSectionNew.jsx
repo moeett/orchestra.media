@@ -79,7 +79,7 @@ export default function TestimonialsSectionNew() {
                   {/* Image */}
                   <div className="relative flex-shrink-0">
                     <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#8B1538]/30 shadow-2xl">
-                      <img 
+                      <img
                         src={testimonials[current].image}
                         alt={testimonials[current].name}
                         className="w-full h-full object-cover"
@@ -93,7 +93,7 @@ export default function TestimonialsSectionNew() {
                   {/* Content */}
                   <div className="flex-1 text-center lg:text-left">
                     <p className="text-white/80 text-xl leading-relaxed mb-8 italic">
-                      "{testimonials[current].quote}"
+                      &quot;{testimonials[current].quote}&quot;
                     </p>
                     <div>
                       <h4 className="text-2xl font-bold text-white mb-1">
@@ -126,11 +126,10 @@ export default function TestimonialsSectionNew() {
                 <button
                   key={index}
                   onClick={() => setCurrent(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    index === current 
-                      ? 'w-12 bg-[#8B1538]' 
+                  className={`h-2 rounded-full transition-all ${index === current
+                      ? 'w-12 bg-[#8B1538]'
                       : 'w-8 bg-white/20 hover:bg-white/40'
-                  }`}
+                    }`}
                 />
               ))}
             </div>
@@ -149,13 +148,12 @@ export default function TestimonialsSectionNew() {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`relative w-16 h-16 rounded-full overflow-hidden transition-all ${
-                  index === current 
-                    ? 'ring-4 ring-[#8B1538] scale-110' 
+                className={`relative w-16 h-16 rounded-full overflow-hidden transition-all ${index === current
+                    ? 'ring-4 ring-[#8B1538] scale-110'
                     : 'opacity-50 hover:opacity-100'
-                }`}
+                  }`}
               >
-                <img 
+                <img
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-full h-full object-cover"

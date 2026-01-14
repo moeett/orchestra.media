@@ -3,12 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
-import { 
-  ArrowRight, 
-  Users, 
-  Globe, 
-  Award, 
-  TrendingUp,
+import {
+  ArrowRight,
+  Globe,
   Target,
   Lightbulb,
   Shield,
@@ -94,7 +91,7 @@ export default function About() {
       <section className="relative pt-32 pb-20 min-h-[500px] flex items-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
             alt="About Orchestra Media"
             className="w-full h-full object-cover opacity-20"
@@ -125,7 +122,7 @@ export default function About() {
               </span>
             </h1>
             <p className="text-xl text-white/70 max-w-3xl">
-              Your trusted global agent for exhibition space and world-class stand building services, 
+              Your trusted global agent for exhibition space and world-class stand building services,
               delivering excellence across 50+ countries since 2007.
             </p>
           </motion.div>
@@ -160,7 +157,7 @@ export default function About() {
       {/* Company Overview */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-[#8B1538]/5 blur-3xl" />
-        
+
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Images */}
@@ -172,24 +169,24 @@ export default function About() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
                     alt="Exhibition"
                     className="rounded-2xl w-full h-64 object-cover border border-white/10"
                   />
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80"
                     alt="Event"
                     className="rounded-2xl w-full h-48 object-cover border border-white/10"
                   />
                 </div>
                 <div className="space-y-4 mt-8">
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80"
                     alt="Booth Design"
                     className="rounded-2xl w-full h-48 object-cover border border-white/10"
                   />
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80"
                     alt="Team"
                     className="rounded-2xl w-full h-64 object-cover border border-white/10"
@@ -222,14 +219,14 @@ export default function About() {
               <span className="inline-block px-4 py-2 rounded-full bg-[#8B1538]/20 text-[#C9A227] text-sm font-semibold mb-4">
                 About Company
               </span>
-              
+
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 Expert Consultant
               </h2>
 
               <p className="text-white/70 text-lg mb-6 leading-relaxed">
-                Orchestra Media is a trusted global agent for exhibition space and world-class stand building 
-                services. With over 17 years of expertise, we specialize in international defence, aerospace, 
+                Orchestra Media is a trusted global agent for exhibition space and world-class stand building
+                services. With over 17 years of expertise, we specialize in international defence, aerospace,
                 technology/AI, and aviation trade shows.
               </p>
 
@@ -285,7 +282,7 @@ export default function About() {
               </span>
             </h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto">
-              We combine industry expertise, global reach, and innovative solutions to deliver 
+              We combine industry expertise, global reach, and innovative solutions to deliver
               exceptional results for your exhibition needs.
             </p>
           </motion.div>
@@ -314,14 +311,14 @@ export default function About() {
       {/* Timeline */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'linear-gradient(to right, #8B1538 1px, transparent 1px), linear-gradient(to bottom, #8B1538 1px, transparent 1px)',
               backgroundSize: '60px 60px'
             }}
           />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -350,9 +347,8 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.15 }}
-                  className={`relative flex flex-col lg:flex-row items-center gap-8 ${
-                    index % 2 === 0 ? '' : 'lg:flex-row-reverse'
-                  }`}
+                  className={`relative flex flex-col lg:flex-row items-center gap-8 ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'
+                    }`}
                 >
                   {/* Year Circle - Center */}
                   <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-gradient-to-br from-[#8B1538] to-[#6d1029] items-center justify-center border-8 border-[#0a1628] shadow-2xl z-10">
@@ -416,7 +412,7 @@ export default function About() {
               Ready to Work Together?
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Partner with Orchestra Media and transform your exhibition presence with our 
+              Partner with Orchestra Media and transform your exhibition presence with our
               world-class services and global expertise.
             </p>
             <Link to={createPageUrl('Contact')}>

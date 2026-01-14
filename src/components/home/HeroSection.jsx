@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 
@@ -10,14 +10,14 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80&fm=webp" 
+        <img
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80&fm=webp"
           alt="Aviation exhibition background"
           className="w-full h-full object-cover"
           width="1920"
           height="1080"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/80 to-[#0a1628]/60" />
       </div>
@@ -25,7 +25,7 @@ export default function HeroSection() {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1, 1.2, 1],
             opacity: [0.1, 0.2, 0.1]
           }}
@@ -33,7 +33,7 @@ export default function HeroSection() {
           className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#8B1538]/30 to-transparent blur-3xl"
         />
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.1, 0.15, 0.1]
           }}
@@ -79,8 +79,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-8 text-lg text-white/70 leading-relaxed lg:max-w-2xl"
           >
-            Orchestra Media is a trusted global agent for exhibition space and a world-class 
-            stand building service for international defence, aerospace, technology/AI, and 
+            Orchestra Media is a trusted global agent for exhibition space and a world-class
+            stand building service for international defence, aerospace, technology/AI, and
             aviation trade shows, focusing on MENA, USA and CIS.
           </motion.p>
 

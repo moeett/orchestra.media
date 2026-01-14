@@ -45,7 +45,7 @@ export default function SalesAgent() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&q=80"
             alt="Sales Agent Space Bookings"
             className="w-full h-full object-cover opacity-20"
@@ -91,13 +91,13 @@ export default function SalesAgent() {
             </span>
             <div className="w-16 h-1 bg-[#8B1538] mx-auto mt-2 mb-6" />
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Expand Your Exhibition's
+              Expand Your Exhibition&apos;s
               <br />
               Reach and Revenue
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              Partnering with Orchestra Media as your sales agent at exhibitions ensures your brand stands out 
-              and converts visibility into results. Our experienced team engages visitors professionally, 
+              Partnering with Orchestra Media as your sales agent at exhibitions ensures your brand stands out
+              and converts visibility into results. Our experienced team engages visitors professionally,
               generates and qualifies leads, and delivers consistent brand messaging across markets.
             </p>
           </motion.div>
@@ -109,12 +109,12 @@ export default function SalesAgent() {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4"
             >
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
                 alt="Exhibition Sales"
                 className="rounded-2xl h-64 object-cover border border-white/10"
               />
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
                 alt="Trade Show"
                 className="rounded-2xl h-64 object-cover border border-white/10 mt-8"
@@ -127,8 +127,8 @@ export default function SalesAgent() {
               viewport={{ once: true }}
             >
               <p className="text-white/70 leading-relaxed mb-6">
-                With on-the-ground expertise, cultural fluency, and post-event reporting, we handle every detail, 
-                from client engagement to follow-up, so you achieve measurable ROI and a seamless, high-impact 
+                With on-the-ground expertise, cultural fluency, and post-event reporting, we handle every detail,
+                from client engagement to follow-up, so you achieve measurable ROI and a seamless, high-impact
                 exhibition presence.
               </p>
               <div className="space-y-3">
@@ -147,7 +147,7 @@ export default function SalesAgent() {
       {/* How It Works */}
       <section className="py-24 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -170,7 +170,7 @@ export default function SalesAgent() {
               What Makes Our Approach Unique
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto mt-4">
-              We have deep roots in key regions including the CIS, MENA, USA and beyond. This means we can tap 
+              We have deep roots in key regions including the CIS, MENA, USA and beyond. This means we can tap
               into a vast database of potential exhibitors and sponsors across multiple sectors.
             </p>
           </motion.div>
@@ -234,7 +234,7 @@ export default function SalesAgent() {
               <Link to={createPageUrl('VIPServices')} className="block">
                 <div className="bg-gradient-to-br from-[#0a1628] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                   <div className="relative h-64 overflow-hidden">
-                    <img 
+                    <img
                       src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80"
                       alt="VIP & Delegation Services"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -264,7 +264,7 @@ export default function SalesAgent() {
               <Link to={createPageUrl('Sponsorship')} className="block">
                 <div className="bg-gradient-to-br from-[#0a1628] to-[#0a1628] rounded-3xl overflow-hidden border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500">
                   <div className="relative h-64 overflow-hidden">
-                    <img 
+                    <img
                       src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
                       alt="Sponsorship"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -308,11 +308,11 @@ export default function SalesAgent() {
               </span>
             </h2>
             <p className="text-white/70 text-xl mb-12">
-              Get in Touch - Let's Start a New Project!
+              Get in Touch - Let&apos;s Start a New Project!
             </p>
             <Link to={createPageUrl('Contact')}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-16 text-lg group shadow-2xl shadow-[#8B1538]/30"
               >
                 Start a Project Now

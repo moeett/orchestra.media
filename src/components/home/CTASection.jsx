@@ -10,7 +10,7 @@ export default function CTASection() {
     <section className="py-24 lg:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img 
+        <img
           src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1920&q=80"
           alt="Exhibition"
           className="w-full h-full object-cover"
@@ -20,7 +20,7 @@ export default function CTASection() {
 
       {/* Decorative Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full" 
+        <div className="absolute top-0 left-0 w-full h-full"
           style={{
             backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
             backgroundSize: '40px 40px'
@@ -43,7 +43,7 @@ export default function CTASection() {
             Get Started Today
           </h2>
           <p className="mt-6 text-xl text-white/80 max-w-2xl mx-auto">
-            Book a free consultation or request a proposal today, and let's start 
+            Book a free consultation or request a proposal today, and let&apos;s start
             your next success story.
           </p>
 

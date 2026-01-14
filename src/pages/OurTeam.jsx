@@ -174,7 +174,7 @@ export default function OurTeam() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80"
             alt="Our Team"
             className="w-full h-full object-cover opacity-20"
@@ -237,7 +237,7 @@ export default function OurTeam() {
                 <div className="relative overflow-hidden rounded-3xl bg-[#0a1628] border border-white/5 hover:border-[#8B1538]/50 transition-all duration-500">
                   {/* Image */}
                   <div className="relative h-80 overflow-hidden">
-                    <img 
+                    <img
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -278,7 +278,7 @@ export default function OurTeam() {
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img 
+                <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
                   alt="Join Our Team"
                   className="w-full h-[500px] object-cover"
@@ -302,11 +302,11 @@ export default function OurTeam() {
                 Talented Professionals
               </h2>
               <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                Join a global team of exhibition and event professionals. We're always looking for talented individuals who are passionate about delivering world-class experiences.
+                Join a global team of exhibition and event professionals. We&apos;re always looking for talented individuals who are passionate about delivering world-class experiences.
               </p>
               <Link to={createPageUrl('Contact')}>
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-14 text-lg group shadow-2xl shadow-[#8B1538]/30"
                 >
                   Send Us Message

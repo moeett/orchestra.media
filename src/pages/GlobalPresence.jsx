@@ -42,7 +42,7 @@ export default function GlobalPresence() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
             alt="Global Presence"
             className="w-full h-full object-cover opacity-20"
@@ -91,17 +91,17 @@ export default function GlobalPresence() {
                 We Combine Local Excellence with Unified Quality Standards
               </h2>
               <p className="text-white/70 text-lg leading-relaxed mb-6">
-                Our footprint spans <strong>MENA</strong>, <strong>Europe</strong>, the <strong>USA</strong>, 
-                <strong> CIS</strong>, and <strong>Asia</strong> with native teams, trusted partners, and a 
+                Our footprint spans <strong>MENA</strong>, <strong>Europe</strong>, the <strong>USA</strong>,
+                <strong> CIS</strong>, and <strong>Asia</strong> with native teams, trusted partners, and a
                 unified standard of quality.
               </p>
               <p className="text-white/70 text-lg leading-relaxed mb-6">
-                This means one contract and one project cadence, delivered seamlessly across time zones 
+                This means one contract and one project cadence, delivered seamlessly across time zones
                 with cultural fluency, established organizer relationships, and on-the-ground problem-solving.
               </p>
               <p className="text-white/70 text-lg leading-relaxed">
-                From VIP protocol in the Gulf to union regulations in the U.S., EU build compliance, 
-                or venue approvals in China, we navigate local realities, so your brand shows up 
+                From VIP protocol in the Gulf to union regulations in the U.S., EU build compliance,
+                or venue approvals in China, we navigate local realities, so your brand shows up
                 flawlessly everywhere.
               </p>
             </motion.div>
@@ -114,7 +114,7 @@ export default function GlobalPresence() {
             >
               <div className="relative aspect-square max-w-lg mx-auto">
                 <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl border-8 border-[#0a1628]">
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
                     alt="Global Network"
                     className="w-full h-full object-cover"
@@ -164,7 +164,7 @@ export default function GlobalPresence() {
       {/* Regions Grid */}
       <section className="py-24 bg-[#0a1628] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" 
+          <div className="absolute inset-0"
             style={{
               backgroundImage: 'radial-gradient(circle, #8B1538 1px, transparent 1px)',
               backgroundSize: '50px 50px'
@@ -200,13 +200,13 @@ export default function GlobalPresence() {
               >
                 <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0f1e2e] to-[#0a1628] border border-white/10 hover:border-[#8B1538]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B1538]/20">
                   <div className="relative h-64 overflow-hidden">
-                    <img 
+                    <img
                       src={region.image}
                       alt={region.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/50 to-transparent" />
-                    
+
                     <div className="absolute bottom-6 left-6 flex items-center gap-3">
                       <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#8B1538] to-[#6d1029] flex items-center justify-center">
                         <MapPin className="w-6 h-6 text-white" />
@@ -244,16 +244,16 @@ export default function GlobalPresence() {
               Whatever Your Ambition
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A227] to-[#8B1538]">
-                We're Ready to Help
+                We&apos;re Ready to Help
               </span>
             </h2>
             <p className="text-white/70 text-xl mb-12">
-              Expanding into new markets, dominating an exhibition, or creating an unforgettable event – 
+              Expanding into new markets, dominating an exhibition, or creating an unforgettable event –
               our team will manage a solution for success.
             </p>
             <Link to={createPageUrl('Contact')}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-[#8B1538] to-[#6d1029] hover:from-[#6d1029] hover:to-[#8B1538] text-white rounded-full px-10 h-16 text-lg group shadow-2xl shadow-[#8B1538]/30"
               >
                 Contact Us

@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
                 className="text-center"
               >
                 <p className="text-xl lg:text-2xl text-white/90 leading-relaxed font-light italic">
-                  "{testimonials[current].quote}"
+                  &quot;{testimonials[current].quote}&quot;
                 </p>
                 <div className="mt-8">
                   <p className="text-[#C9A227] font-semibold text-lg">
@@ -111,11 +111,10 @@ export default function TestimonialsSection() {
                 <button
                   key={index}
                   onClick={() => setCurrent(index)}
-                  className={`rounded-full transition-all duration-300 ${
-                    index === current 
-                      ? 'w-8 h-3 bg-[#8B1538]' 
+                  className={`rounded-full transition-all duration-300 ${index === current
+                      ? 'w-8 h-3 bg-[#8B1538]'
                       : 'w-3 h-3 bg-white/30 hover:bg-white/50'
-                  }`}
+                    }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}
