@@ -70,13 +70,20 @@ export default function CaseStudiesSectionNew() {
                 <div className="relative overflow-hidden rounded-3xl bg-[#0f1e2e] border border-white/5 hover:border-[#8B1538]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B1538]/20">
                   {/* Image */}
                   <div className="relative h-80 overflow-hidden">
-                    <img 
+                    <img
                       src={study.image}
+                      srcSet={`
+                        ${study.image.replace('w=800', 'w=400')} 400w,
+                        ${study.image.replace('w=800', 'w=600')} 600w,
+                        ${study.image.replace('w=800', 'w=800')} 800w
+                      `}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       alt={study.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/50 to-transparent" />
-                    
+
                     {/* Overlay Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-6">
                       <span className="text-[#C9A227] text-sm font-semibold mb-2">

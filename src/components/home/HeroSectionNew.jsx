@@ -49,8 +49,15 @@ export default function HeroSectionNew() {
         >
           <img
             src={slides[currentSlide].image}
+            srcSet={`
+              ${slides[currentSlide].image.replace('w=1920', 'w=640')} 640w,
+              ${slides[currentSlide].image.replace('w=1920', 'w=1024')} 1024w,
+              ${slides[currentSlide].image.replace('w=1920', 'w=1920')} 1920w
+            `}
+            sizes="100vw"
             alt="Exhibition"
             className="w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/80 to-transparent" />
         </motion.div>
@@ -138,8 +145,8 @@ export default function HeroSectionNew() {
               onClick={() => setCurrentSlide(index)}
               aria-label={`Go to slide ${index + 1}`}
               className={`h-1 rounded-full transition-all ${index === currentSlide
-                  ? 'w-12 bg-[#8B1538]'
-                  : 'w-8 bg-white/30 hover:bg-white/50'
+                ? 'w-12 bg-[#8B1538]'
+                : 'w-8 bg-white/30 hover:bg-white/50'
                 }`}
             />
           ))}

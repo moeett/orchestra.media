@@ -26,5 +26,13 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'ui-vendor': ['framer-motion', 'lucide-react', 'clsx', 'tailwind-merge']
+        }
+      }
+    }
   },
 }) 

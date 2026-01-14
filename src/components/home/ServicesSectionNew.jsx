@@ -94,13 +94,20 @@ export default function ServicesSectionNew() {
                 <div className="relative overflow-hidden rounded-3xl bg-[#0a1628] border border-white/5 transition-all duration-500 hover:border-[#8B1538]/50 hover:shadow-2xl hover:shadow-[#8B1538]/20">
                   {/* Image */}
                   <div className="relative h-64 overflow-hidden">
-                    <img 
+                    <img
                       src={service.image}
+                      srcSet={`
+                        ${service.image.replace('w=800', 'w=400')} 400w,
+                        ${service.image.replace('w=800', 'w=600')} 600w,
+                        ${service.image.replace('w=800', 'w=800')} 800w
+                      `}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       alt={service.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/50 to-transparent" />
-                    
+
                     {/* Icon Badge */}
                     <div className="absolute top-6 left-6 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#8B1538] to-[#6d1029] flex items-center justify-center shadow-xl">
                       <service.icon className="w-8 h-8 text-white" />
