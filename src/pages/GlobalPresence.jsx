@@ -202,7 +202,14 @@ export default function GlobalPresence() {
                   <div className="relative h-64 overflow-hidden">
                     <img
                       src={region.image}
+                      srcSet={`
+                        ${region.image.replace('w=800', 'w=400')} 400w,
+                        ${region.image.replace('w=800', 'w=600')} 600w,
+                        ${region.image.replace('w=800', 'w=800')} 800w
+                      `}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       alt={region.name}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/50 to-transparent" />

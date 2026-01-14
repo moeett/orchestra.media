@@ -25,18 +25,18 @@ export default function BrandsSection() {
         <div className="relative overflow-hidden">
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
-          
+
           <motion.div
             animate={{ x: [0, -1920] }}
             transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="flex items-center gap-16"
           >
             {[...brands, ...brands, ...brands].map((brand, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex-shrink-0 px-6 py-4 bg-gray-50 rounded-xl"
               >
-                <span className="text-lg font-semibold text-gray-400 whitespace-nowrap">
+                <span className="text-lg font-semibold text-gray-600 whitespace-nowrap">
                   {brand}
                 </span>
               </div>
