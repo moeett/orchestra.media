@@ -175,7 +175,7 @@ export default function OurTeam() {
       <section className="relative pt-32 pb-20 min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/images/orchestra-media-team2.webp"
+            src="/assets/images/Orchestra-media-Team2.webp"
             alt="Our Team"
             className="w-full h-full object-cover opacity-60"
           />
