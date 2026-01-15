@@ -94,9 +94,9 @@ export default function About() {
           <img
             src="/assets/images/orchestra-team.webp"
             alt="About Orchestra Media"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/95 to-[#0a1628]/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/60 to-[#0a1628]/40" />
         </div>
 
         {/* Decorative Elements */}

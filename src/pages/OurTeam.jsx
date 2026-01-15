@@ -177,9 +177,9 @@ export default function OurTeam() {
           <img
             src="/assets/images/orchestra-media-team2.webp"
             alt="Our Team"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/80 to-[#0a1628]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/60 to-[#0a1628]/40" />
         </div>
 
         <div className="absolute inset-0 z-0 overflow-hidden">

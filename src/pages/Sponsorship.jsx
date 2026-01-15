@@ -53,9 +53,9 @@ export default function Sponsorship() {
           <img
             src="/assets/images/1511578314322-3-large.webp"
             alt="Sponsorship"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/80 to-[#0a1628]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/60 to-[#0a1628]/40" />
         </div>
 
         <div className="absolute inset-0 z-0 overflow-hidden">

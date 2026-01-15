@@ -87,9 +87,9 @@ export default function AIEnhancements() {
           <img
             src="/assets/images/1677442136019-2-large.webp"
             alt="AI Enhancements"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/80 to-[#0a1628]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/60 to-[#0a1628]/40" />
         </div>
 
         <div className="absolute inset-0 z-0 overflow-hidden">
