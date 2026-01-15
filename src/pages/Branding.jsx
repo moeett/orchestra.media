@@ -58,14 +58,14 @@ export default function Branding() {
   return (
     <div className="bg-[#0a1628]">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
+      <section className="relative pt-32 pb-20 min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/assets/images/1561070791-2526-large.webp"
             alt="Branding"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/95 to-[#0a1628]/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/80 to-[#0a1628]/60" />
         </div>
 
         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -80,11 +80,18 @@ export default function Branding() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-6 py-2 rounded-full bg-[#8B1538]/20 backdrop-blur-sm text-[#C9A227] text-sm font-bold tracking-wider uppercase mb-6 border border-[#8B1538]/30">
-              EXTRA SERVICES - STRATEGIC MARKETING
+              Benefit Our Service
             </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              BRANDING
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              Brand Systems That
+              <br />
+              Travel Well
             </h1>
+            <p className="text-white/70 text-lg max-w-3xl mx-auto mt-6">
+              Your brand has to work everywhere: on a 30-second video, a 30-meter lightbox, a 3D façade at a
+              national pavilion, a LinkedIn ad, and a C-level deck—often in different languages, regulations,
+              and cultural contexts.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -104,33 +111,6 @@ export default function Branding() {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-20"
-          >
-            <motion.span
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-[#8B1538]/20 to-[#C9A227]/20 backdrop-blur-sm text-[#C9A227] text-sm font-bold tracking-wider uppercase mb-6 border border-[#8B1538]/30"
-            >
-              BENEFIT OUR SERVICE
-            </motion.span>
-            <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-              Brand Systems That
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A227] via-[#8B1538] to-[#C9A227]">
-                Travel Well
-              </span>
-            </h2>
-            <p className="text-white/60 text-xl max-w-3xl mx-auto leading-relaxed">
-              Your brand has to work everywhere: on a 30-second video, a 30-meter lightbox, a 3D façade at a
-              national pavilion, a LinkedIn ad, and a C-level deck—often in different languages, regulations,
-              and cultural contexts.
-            </p>
-          </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div

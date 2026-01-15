@@ -92,9 +92,9 @@ export default function About() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/images/1540575467063-1-large.webp"
+            src="/assets/images/orchestra-team.webp"
             alt="About Orchestra Media"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/95 to-[#0a1628]/80" />
         </div>

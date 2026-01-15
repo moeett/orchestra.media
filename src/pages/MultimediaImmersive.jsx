@@ -84,14 +84,14 @@ export default function MultimediaImmersive() {
   return (
     <div className="bg-[#0a1628]">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
+      <section className="relative pt-32 pb-20 min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/assets/images/1558618666-fcd2-large.webp"
             alt="Multimedia & Immersive"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/95 to-[#0a1628]/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/80 to-[#0a1628]/60" />
         </div>
 
         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -106,11 +106,18 @@ export default function MultimediaImmersive() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-6 py-2 rounded-full bg-[#8B1538]/20 backdrop-blur-sm text-[#C9A227] text-sm font-bold tracking-wider uppercase mb-6 border border-[#8B1538]/30">
-              EXTRA SERVICES - MULTIMEDIA & IMMERSIVE
+              Benefit Our Service
             </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              MULTIMEDIA & IMMERSIVE
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              We Build the Moment
+              <br />
+              Everyone Talks About
             </h1>
+            <p className="text-white/70 text-lg max-w-3xl mx-auto mt-6">
+              Turn walk-bys into stand-stays. We design and deliver <strong className="text-white">immersive,
+                interactive content</strong> that makes your booth a destination—AR/VR demos, giant LED canvases,
+              projection mapping, holograms, touch and motion-reactive experiences.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -130,33 +137,6 @@ export default function MultimediaImmersive() {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-20"
-          >
-            <motion.span
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-[#8B1538]/20 to-[#C9A227]/20 backdrop-blur-sm text-[#C9A227] text-sm font-bold tracking-wider uppercase mb-6 border border-[#8B1538]/30"
-            >
-              BENEFIT OUR SERVICE
-            </motion.span>
-            <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-              We Build the Moment
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A227] via-[#8B1538] to-[#C9A227]">
-                Everyone Talks About
-              </span>
-            </h2>
-            <p className="text-white/60 text-xl max-w-3xl mx-auto leading-relaxed">
-              Turn walk-bys into stand-stays. We design and deliver <strong className="text-white">immersive,
-                interactive content</strong> that makes your booth a destination—AR/VR demos, giant LED canvases,
-              projection mapping, holograms, touch and motion-reactive experiences.
-            </p>
-          </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div

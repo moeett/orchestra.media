@@ -43,14 +43,14 @@ export default function BoothDesign() {
   return (
     <div className="bg-[#0a1628]">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 min-h-[400px] flex items-center overflow-hidden">
+      <section className="relative pt-32 pb-20 min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/images/1497366216548-3-large.webp"
+            src="/assets/images/Booth-design-construction.webp"
             alt="Booth Design Construction"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/95 to-[#0a1628]/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/80 to-[#0a1628]/60" />
         </div>
 
         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -65,11 +65,17 @@ export default function BoothDesign() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-6 py-2 rounded-full bg-[#8B1538]/20 backdrop-blur-sm text-[#C9A227] text-sm font-bold tracking-wider uppercase mb-6 border border-[#8B1538]/30">
-              CORE SERVICES - BOOTH DESIGN
+              Corse Services - Booth Design
             </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              BOOTH DESIGN & CONSTRUCTION
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              Make a Powerful Impression with
+              <br />
+              an Unforgettable Exhibition Stand
             </h1>
+            <p className="text-white/70 text-lg max-w-3xl mx-auto mt-6">
+              Orchestra Media&apos;s Booth Design & Construction service delivers turn-key booth solutions –
+              custom-designed, expertly built, and ready to wow – anywhere in the world.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -80,26 +86,6 @@ export default function BoothDesign() {
         <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-[#C9A227]/5 blur-3xl" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-[#C9A227] text-sm font-bold tracking-wider uppercase">
-              BENEFIT OUR SERVICE
-            </span>
-            <div className="w-16 h-1 bg-[#8B1538] mx-auto mt-2 mb-6" />
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Make a Powerful Impression with
-              <br />
-              an Unforgettable Exhibition Stand
-            </h2>
-            <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              Orchestra Media&apos;s Booth Design & Construction service delivers turn-key booth solutions –
-              custom-designed, expertly built, and ready to wow – anywhere in the world.
-            </p>
-          </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
