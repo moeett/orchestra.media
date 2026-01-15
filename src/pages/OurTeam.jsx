@@ -172,12 +172,12 @@ export default function OurTeam() {
   return (
     <div className="bg-[#0a1628]">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 min-h-[500px] flex items-center overflow-hidden">
+      <section className="relative pt-32 pb-20 min-h-[600px] lg:min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/assets/images/Orchestra-media-Team2.webp"
             alt="Our Team"
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover object-top opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/60 to-[#0a1628]/40" />
         </div>
