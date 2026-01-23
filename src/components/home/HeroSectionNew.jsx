@@ -1,10 +1,35 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+
+const heroContent = [
+  {
+    smallTitle: "Global Exhibition Excellence",
+    bigTitle: ["Experience the", "Power of World-Class", "Exhibition Services"]
+  },
+  {
+    smallTitle: "Stand Design & Construction",
+    bigTitle: ["Transform Your", "Exhibition Presence with", "Innovative Solutions"]
+  },
+  {
+    smallTitle: "Events Management",
+    bigTitle: ["Create Unforgettable", "Experiences That Drive", "Business Growth"]
+  }
+];
+
 export default function HeroSectionNew() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % heroContent.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative h-screen min-h-[600px] lg:min-h-[750px] overflow-hidden bg-[#0a1628]">
@@ -65,21 +90,44 @@ export default function HeroSectionNew() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <motion.span
-              className="inline-block px-6 py-2 rounded-full bg-[#8B1538]/20 backdrop-blur-sm text-[#C9A227] text-sm font-semibold mb-6 border border-[#8B1538]/30"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              Global Exhibition Excellence
-            </motion.span>
+            {/* Animated Small Title */}
+            <div className="h-[44px] mb-6 overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={currentIndex}
+                  className="inline-block px-6 py-2 rounded-full bg-[#8B1538]/20 backdrop-blur-sm text-[#C9A227] text-sm font-semibold border border-[#8B1538]/30"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -30 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                >
+                  {heroContent[currentIndex].smallTitle}
+                </motion.span>
+              </AnimatePresence>
+            </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-              Experience the<br />
-              Power of World-Class<br />
-              Exhibition Services
-            </h1>
+            {/* Animated Big Title */}
+            <div className="h-[200px] md:h-[220px] lg:h-[260px] mb-8 overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.h1
+                  key={currentIndex}
+                  className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -50 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                >
+                  {heroContent[currentIndex].bigTitle.map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      {index < heroContent[currentIndex].bigTitle.length - 1 && <br />}
+                    </span>
+                  ))}
+                </motion.h1>
+              </AnimatePresence>
+            </div>
 
+            {/* Fixed Buttons */}
             <motion.div
               className="flex flex-wrap gap-4"
               initial={{ opacity: 0, y: 20 }}
@@ -91,7 +139,7 @@ export default function HeroSectionNew() {
                   size="lg"
                   className="bg-[#8B1538] hover:bg-[#6d1029] text-white rounded-full px-8 h-14 text-lg group shadow-xl shadow-[#8B1538]/20"
                 >
-                  Get Started
+                  What We Do
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -106,6 +154,22 @@ export default function HeroSectionNew() {
             </motion.div>
           </motion.div>
         </div>
+      </div>
+
+      {/* Progress Indicators */}
+      <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+        {heroContent.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`h-1 rounded-full transition-all duration-500 ${
+              index === currentIndex 
+                ? 'w-8 bg-[#C9A227]' 
+                : 'w-2 bg-white/30 hover:bg-white/50'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
     </section>
   );
