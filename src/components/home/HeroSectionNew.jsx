@@ -54,12 +54,12 @@ export default function HeroSectionNew() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-transparent to-transparent opacity-80" />
       </div>
 
-      {/* Progress Indicators & Scroll Indicator - Centered Together */}
+      {/* Progress Indicators & Scroll Indicator - Centered on all devices */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-0 right-0 z-20 flex flex-col items-center gap-4"
+        className="absolute bottom-10 inset-x-0 z-20 flex flex-col items-center justify-center gap-4"
       >
         {/* Progress Indicators */}
         <div className="flex gap-2">
@@ -108,7 +108,7 @@ export default function HeroSectionNew() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {/* Animated Small Title */}
-            <div className="h-[44px] mb-6 overflow-hidden">
+            <div className="mb-6">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={currentIndex}
@@ -123,12 +123,12 @@ export default function HeroSectionNew() {
               </AnimatePresence>
             </div>
 
-            {/* Animated Big Title */}
-            <div className="h-[280px] md:h-[300px] lg:h-[320px] mb-8 overflow-hidden">
+            {/* Animated Big Title - no fixed height */}
+            <div className="mb-8">
               <AnimatePresence mode="wait">
                 <motion.h1
                   key={currentIndex}
-                  className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+                  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -50 }}
