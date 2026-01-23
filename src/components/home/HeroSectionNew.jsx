@@ -54,30 +54,13 @@ export default function HeroSectionNew() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-transparent to-transparent opacity-80" />
       </div>
 
-      {/* Progress Indicators & Scroll Indicator - Centered on all devices */}
+      {/* Scroll Indicator - Centered on all devices */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 inset-x-0 z-20 flex flex-col items-center justify-center gap-4"
+        className="absolute bottom-10 inset-x-0 z-20 flex flex-col items-center justify-center"
       >
-        {/* Progress Indicators */}
-        <div className="flex gap-2">
-          {heroContent.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`h-1 rounded-full transition-all duration-500 ${
-                index === currentIndex 
-                  ? 'w-8 bg-[#C9A227]' 
-                  : 'w-2 bg-white/30 hover:bg-white/50'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-        
-        {/* Scroll Indicator */}
         <div className="flex flex-col items-center gap-2">
           <span className="text-white/50 text-xs tracking-[0.2em] uppercase font-light">Scroll</span>
           <div className="w-[30px] h-[50px] rounded-full border-2 border-white/20 flex justify-center p-2">

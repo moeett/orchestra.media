@@ -234,13 +234,13 @@ export default function Layout({ children, currentPageName }) {
         href="https://api.whatsapp.com/send?phone=+971554978427&text=Hello+Orchestra%21"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 left-6 z-50 group"
+        className="fixed bottom-6 right-6 z-50 group"
       >
         <div className="relative">
           <div className="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300">
             <MessageCircle className="w-7 h-7 text-white" />
           </div>
-          <span className="absolute left-full ml-3 top-1/2 -translate-y-1/2 bg-white px-3 py-1.5 rounded-lg shadow-md text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white px-3 py-1.5 rounded-lg shadow-md text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
             Need Help?
           </span>
         </div>
