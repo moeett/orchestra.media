@@ -45,10 +45,7 @@ export default function Layout({ children, currentPageName }) {
   }, [location]);
 
   const toggleMobileItem = (itemName) => {
-    setExpandedMobileItems(prev => ({
-      ...prev,
-      [itemName]: !prev[itemName]
-    }));
+    setExpandedMobileItems(prev => prev[itemName] ? {} : { [itemName]: true });
   };
 
   const navLinks = [
@@ -184,7 +181,7 @@ export default function Layout({ children, currentPageName }) {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border-t"
+              className="lg:hidden bg-white border-t max-h-[calc(100vh-80px)] overflow-y-auto"
             >
               <div className="max-w-7xl mx-auto px-6 py-4">
                 {navLinks.map((link) => (
