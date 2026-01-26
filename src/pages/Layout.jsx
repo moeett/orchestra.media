@@ -14,8 +14,8 @@ import Footer from '@/components/common/Footer';
 
 export default function Layout({ children, currentPageName }) {
   const [scrolled, setScrolled] = useState(false);
+  const [expandedMobileItems, setExpandedMobileItems] = useState({});
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -28,6 +28,7 @@ export default function Layout({ children, currentPageName }) {
 
   useEffect(() => {
     setMobileMenuOpen(false);
+    setExpandedMobileItems({}); // Reset expanded items when closing menu or changing page
     window.scrollTo(0, 0);
 
     // Canonical Tag Logic
@@ -42,6 +43,13 @@ export default function Layout({ children, currentPageName }) {
     const cleanUrl = window.location.origin + location.pathname;
     canonicalLink.setAttribute("href", cleanUrl.endsWith('/') ? cleanUrl : cleanUrl + '/');
   }, [location]);
+
+  const toggleMobileItem = (itemName) => {
+    setExpandedMobileItems(prev => ({
+      ...prev,
+      [itemName]: !prev[itemName]
+    }));
+  };
 
   const navLinks = [
     { name: 'Home', page: 'Home' },
@@ -183,13 +191,13 @@ export default function Layout({ children, currentPageName }) {
                   link.children ? (
                     <div key={link.name} className="py-2">
                       <button
-                        onClick={() => setServicesOpen(!servicesOpen)}
+                        onClick={() => toggleMobileItem(link.name)}
                         className="flex items-center justify-between w-full py-2 text-[#0a1628] font-medium"
                       >
                         {link.name}
-                        <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`w-4 h-4 transition-transform ${expandedMobileItems[link.name] ? 'rotate-180' : ''}`} />
                       </button>
-                      {servicesOpen && (
+                      {expandedMobileItems[link.name] && (
                         <div className="pl-4 mt-2 space-y-2 border-l-2 border-gray-100">
                           {link.children.map((child) => (
                             <Link
